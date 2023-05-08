@@ -1,0 +1,21 @@
+.gap1Content {
+    display: flex;
+    align-items: center;
+}
+
+.gap1Content ul {
+    margin-right: 20px;
+}
+
+.gap1Content li {
+    margin-bottom: 20px;
+}
+
+.gap1Content li:last-of-type {
+    margin-bottom: 0;
+}
+
+.gap1Content img {
+    /* width: 598px;
+    height: 511px; */
+}

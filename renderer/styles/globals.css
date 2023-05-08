@@ -1,4 +1,136 @@
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'DINPro';
+    /* src: url('/fonts/DINPro-Regular.ttf'); */
+    src: url('/fonts/DINPro.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-MediumItalic.ttf');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('/fonts/DINPro-Bold.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'DINPro', 'Arial';
+}
+
+html, body {
+    --colBlue: #009ADE;
+    --colOrange: #FF9E18;
+    --colGrey: #575756;
+    --colBg: #F5F5F5;
+}
+
+body {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    font-size: 20px;
+    color: var(--colGrey);
+    background-color: var(--colBg);
+}
+
+h1 {
+    font-weight: 300;
+    text-align: center;
+}
+
+.content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1223px;
+    height: 100%;
+    padding: 90px;
+    /* background: lightblue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footnotes {
+    align-self: flex-end;
+    max-width: 900px;
+    list-style: none;
+}
+
+.footnote {
+    font-size: 0.8rem;
+    text-align: end;
+    opacity: 0.75;
+}
+
+.next {
+    position: fixed;
+    right: 90px;
+    top: 50%;
+}
+
+.blue {
+    color: var(--colBlue);
+    font-weight: 700;
+}
+
+.popupBg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.2s ease-in-out;
 }
