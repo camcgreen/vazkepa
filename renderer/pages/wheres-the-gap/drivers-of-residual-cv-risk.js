@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 import styles from '../../styles/Gap.module.css';
 import Footer from '../../components/footer';
 import Sidebar from '../../components/sidebar';
 
-export default function Home() {
+export default function Drivers() {
     useEffect(() => {
         // on mount
     }, []);
-    const router = useRouter();
     return (
+        // <div className={styles.wrapper}>
         <>
             <Sidebar
                 navItems={[
@@ -37,10 +36,10 @@ export default function Home() {
             />
             <div className='content'>
                 <h1>
-                    <span className='blue'>REGARDLESS OF STATIN THERAPY</span>,
-                    RESIDUAL RISK REMAINS IN HIGH CV RISK PATIENTS
+                    <span className='blue'>SEVERAL DRIVERS</span>, CONTRIBUTE TO
+                    RESIDUAL CV RISK
                     <span className='superscript'>
-                        <sup>1-3</sup>
+                        <sup>1</sup>
                     </span>
                 </h1>
                 <div className={styles.gap1Content}>
@@ -70,16 +69,7 @@ export default function Home() {
                     </ul>
                     <img src='/images/wheres-the-gap-1.png' alt='' />
                 </div>
-                <img
-                    className='next'
-                    src='/images/next.svg'
-                    alt=''
-                    onClick={() =>
-                        router.push(
-                            '/wheres-the-gap/drivers-of-residual-cv-risk'
-                        )
-                    }
-                />
+                <img className='next' src='/images/next.svg' alt='' />
                 <ul className='footnotes'>
                     <li className='footnote'>
                         *Confidence intervals: Primary endpoint (5-point MACE) -
