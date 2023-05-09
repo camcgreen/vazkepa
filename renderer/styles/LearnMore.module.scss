@@ -1,0 +1,104 @@
+.content{
+    background-image: '/images/5.0.jpg';
+    justify-content: flex-start;
+}
+
+.profiles{
+
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    align-items: flex-end;
+    
+    div{
+        margin-top: 60px;
+        margin-right: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    
+    span{
+
+        margin-top: 10px;
+        color: black;
+        font-weight: 700;
+    }
+
+    button{
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        margin-top: 40px ;
+        width: 10vw;
+        border:0 ;
+        /* Auto layout */
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 11px 24px 13px;
+        gap: 10px;
+
+        width: 197px;
+        height: 60px;
+
+        /* Vazkepa/Accent */
+
+        background: #009ADE;
+        border-radius: 50px;
+
+        /* Inside auto layout */
+
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+
+}
+
+.singleCard{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center !important;
+    span{
+        padding-top:80px ;
+
+        align-self:baseline;
+    }
+}
+
+
+.gap1Content {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+
+}
+
+.gap1Content img {
+    width: 15vw;
+}
+
+.gap1Content ul {
+    margin-right: 20px;
+}
+
+.gap1Content li {
+    margin-bottom: 20px;
+}
+
+.gap1Content li:last-of-type {
+    margin-bottom: 0;
+}
+
+.gap1Content img {
+    /* width: 598px;
+    height: 511px; */
+}
