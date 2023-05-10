@@ -19,3 +19,62 @@
     /* width: 598px;
     height: 511px; */
 }
+
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.graph {
+    width: 659px;
+    margin-right: 40px;
+}
+
+.text {
+    width: 209px;
+}
+
+.callout {
+    width: 648px;
+}
+
+.buttonGap {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 236px;
+}
+
+.driversImg1 {
+    width: 900px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.driversImg2 {
+    width: 800px;
+    align-self: center;
+}
+
+.elevatedImg1 {
+    width: 664px;
+    align-self: center;
+}
+
+.buttonContainerElevated {
+    position: fixed;
+    display: flex;
+    right: 40px;
+    bottom: 100px;
+}
+
+.buttonElevated1 {
+    width: 267px;
+    margin-right: 40px;
+}
+
+.buttonElevated2 {
+    width: 236px;
+}
