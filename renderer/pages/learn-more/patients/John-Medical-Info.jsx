@@ -2,14 +2,13 @@ import React from 'react'
 import styles from '../../../styles/LearnMore.module.scss';
 import Footer from '../../../components/footer';
 import Router from 'next/router';
-import ArrowButtons from '../../../components/ArrowButtons';
 
-export default function David() {
+
+export default function DavidMedicalInfo() {
+
+
     return (
         <div>
-
-            <ArrowButtons right urlRight={'/learn-more/patients/David-Medical-Info'} />
-
             <div className={`${styles.content} content`} >
                 <h1>
 

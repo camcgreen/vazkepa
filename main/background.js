@@ -12,17 +12,11 @@ if (isProd) {
 
 (async () => {
     await app.whenReady();
-
     const mainWindow = createWindow('main', {
         width: 1920,
         height: 1080,
-        //   fullscreen: true,
-        // autoHideMenuBar: true,
-        // titleBarOverlay: {
-        //     color: '#1D4F48',
-        //     symbolColor: 'white',
-        //     height: 0,
-        // },
+        fullscreen: true,
+        autoHideMenuBar: true
     });
 
     if (isProd) {
