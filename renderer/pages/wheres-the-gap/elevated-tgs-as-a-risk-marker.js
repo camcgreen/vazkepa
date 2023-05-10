@@ -4,8 +4,10 @@ import styles from '../../styles/Gap.module.css';
 import Footer from '../../components/footer';
 import Sidebar from '../../components/sidebar';
 
-export default function Drivers() {
+export default function Elevated() {
     const router = useRouter();
+    const [showPopup, setShowPopup] = useState(false);
+    const [popupIndex, setPopupIndex] = useState(0);
     useEffect(() => {
         // on mount
     }, []);
@@ -30,42 +32,54 @@ export default function Drivers() {
             />
             <div className='content'>
                 <h1>
-                    <span className='blue'>SEVERAL DRIVERS</span>, CONTRIBUTE TO
-                    RESIDUAL CV RISK
+                    <span className='blue'>ON-TREATMENT TG LEVELS</span> Were
+                    Associated With CV Risk Independently Of on treatment LDL-C
+                    Levels<sup>1</sup>
                     <span className='superscript'>
                         <sup>1</sup>
                     </span>
                 </h1>
                 <h2>
-                    Key pathways modulating residual CV risk in secondary
-                    prevention <sup>1</sup>
+                    {
+                        'Post hoc analysis of 3,718 ACS patients from the PROVE-IT TIMI 22 trial who survived event free >30 days: incidence of death, MI or re-hospitalisation for ACS'
+                    }
+                    <sup>1</sup>
                 </h2>
                 <img
-                    src='/images/drivers-1.png'
-                    className={styles.driversImg1}
-                    alt=''
-                />
-                <img
-                    src='/images/drivers-2.png'
-                    className={styles.driversImg2}
+                    src='/images/elevated-1.png'
+                    className={styles.elevatedImg1}
                     alt=''
                 />
                 <img
                     className='prev'
                     src='/images/prev.svg'
                     alt=''
-                    onClick={() => router.push('/wheres-the-gap')}
-                />
-                <img
-                    className='next'
-                    src='/images/next.svg'
-                    alt=''
                     onClick={() =>
                         router.push(
-                            '/wheres-the-gap/elevated-tgs-as-a-risk-marker'
+                            '/wheres-the-gap/drivers-of-residual-cv-risk'
                         )
                     }
                 />
+                <div className={styles.buttonContainerElevated}>
+                    <img
+                        src='/images/elevated-2.png'
+                        alt=''
+                        className={styles.buttonElevated1}
+                        onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(0);
+                        }}
+                    />
+                    <img
+                        src='/images/elevated-3.png'
+                        alt=''
+                        className={styles.buttonElevated2}
+                        onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(1);
+                        }}
+                    />
+                </div>
                 {/* <ul className='footnotes'>
                     <li className='footnote'>
                         *Confidence intervals: Primary endpoint (5-point MACE) -
@@ -82,7 +96,16 @@ export default function Drivers() {
                         stroke, or CV death.
                     </li>
                 </ul> */}
-                <Footer imgSrc='reference-2.1.png' />
+                <Footer
+                    imgSrc='reference-2.2.png'
+                    popupImgSrc={[
+                        '/images/elevated-popup-1.png',
+                        '/images/elevated-popup-2.png',
+                    ]}
+                    showPopup={showPopup}
+                    setShowPopup={setShowPopup}
+                    popupIndex={popupIndex}
+                />
             </div>
         </>
     );

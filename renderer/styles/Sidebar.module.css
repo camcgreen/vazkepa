@@ -37,3 +37,9 @@
     left: -1533px;
     top: calc(50% - 1565.56px/2 + 229.78px); */
 }
+
+.home {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+}

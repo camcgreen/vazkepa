@@ -87,6 +87,13 @@ const Sidebar = ({ navItems }) => {
                             </Link>
                         </li>
                     ))}
+                    <Link href='/'>
+                        <img
+                            src='/images/home.svg'
+                            alt=''
+                            className={styles.home}
+                        />
+                    </Link>
                 </ul>
             </nav>
         </>

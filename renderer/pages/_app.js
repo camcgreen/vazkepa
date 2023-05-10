@@ -1,9 +1,11 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import '../styles/globals.css';
 import IdleTimerComponent from '../components/IdleTimer';
 
 export default function App({ Component, pageProps }) {
+    const router = useRouter();
     return (
         <>
             <Head>
@@ -11,7 +13,12 @@ export default function App({ Component, pageProps }) {
                 <link rel='icon' href='/favicon.ico' />
             </Head>
             {/* <IdleTimerComponent /> */}
-            <img src='/images/v.png' alt='' className='v' />
+            <img
+                src='/images/v.png'
+                alt=''
+                className='v'
+                style={{ display: router.pathname === '/' ? 'none' : 'block' }}
+            />
             <Component {...pageProps} />
         </>
     );

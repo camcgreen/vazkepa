@@ -1,9 +1,16 @@
 import { useEffect, useState } from 'react';
 import Prescribing from './prescribing';
 import References from './references';
+import Popup from './popup';
 import styles from '../styles/Footer.module.css';
 
-const Footer = ({ imgSrc }) => {
+const Footer = ({
+    imgSrc,
+    popupImgSrc,
+    showPopup,
+    setShowPopup,
+    popupIndex,
+}) => {
     const [showPrescribingPopup, setShowPrescribingPopup] = useState(false);
     const [showReferencesPopup, setShowReferencesPopup] = useState(false);
     useEffect(() => {
@@ -26,6 +33,18 @@ const Footer = ({ imgSrc }) => {
             popup.style.pointerEvents = 'none';
         }
     }, [showReferencesPopup]);
+    useEffect(() => {
+        const popup = document.getElementById('popup');
+        if (popup) {
+            if (showPopup) {
+                popup.style.opacity = 1;
+                popup.style.pointerEvents = 'all';
+            } else {
+                popup.style.opacity = 0;
+                popup.style.pointerEvents = 'none';
+            }
+        }
+    }, [showPopup]);
     return (
         <>
             <footer className={styles.footer}>
@@ -59,6 +78,13 @@ const Footer = ({ imgSrc }) => {
                 setShowReferencesPopup={setShowReferencesPopup}
                 imgSrc={imgSrc}
             />
+            {popupImgSrc && (
+                <Popup
+                    setShowPopup={setShowPopup}
+                    popupImgSrc={[...popupImgSrc]}
+                    popupIndex={popupIndex}
+                />
+            )}
         </>
     );
 };
