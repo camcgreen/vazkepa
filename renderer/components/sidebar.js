@@ -49,6 +49,7 @@ const Sidebar = ({ navItems }) => {
                     {navItems.map((item, i) => (
                         <li
                             className='navLi'
+                            onClick={() => router.push(item.link)}
                             // style={{
                             //     transform:
                             //         router.pathname === item.link
@@ -64,27 +65,25 @@ const Sidebar = ({ navItems }) => {
                                 }
                                 alt=''
                             />
-                            <Link href={item.link}>
-                                <a
-                                    className='navLiLink'
-                                    style={{
-                                        backgroundColor:
-                                            router.pathname === item.link
-                                                ? 'white'
-                                                : 'rgba(0, 0, 0, 0)',
-                                        color:
-                                            router.pathname === item.link
-                                                ? '#009ADE'
-                                                : 'white',
-                                        padding:
-                                            router.pathname === item.link
-                                                ? '16px 10px'
-                                                : '0',
-                                    }}
-                                >
-                                    {item.title}
-                                </a>
-                            </Link>
+                            <a
+                                className='navLiLink'
+                                style={{
+                                    backgroundColor:
+                                        router.pathname === item.link
+                                            ? 'white'
+                                            : 'rgba(0, 0, 0, 0)',
+                                    color:
+                                        router.pathname === item.link
+                                            ? '#009ADE'
+                                            : 'white',
+                                    padding:
+                                        router.pathname === item.link
+                                            ? '16px 10px'
+                                            : '0',
+                                }}
+                            >
+                                {item.title}
+                            </a>
                         </li>
                     ))}
                     <Link href='/'>

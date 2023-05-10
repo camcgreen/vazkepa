@@ -178,6 +178,10 @@ sup {
     font-weight: 700;
 }
 
+.homeNavLiLink {
+    /* max-width: 260px; */
+}
+
 .v {
     /* position: fixed;
     left: 70%;
