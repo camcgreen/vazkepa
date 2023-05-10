@@ -6,6 +6,18 @@ import Router from 'next/router';
 
 export default function Home() {
     useEffect(() => {
+
+        //PRESS M TO BE REDIRECTED TO MAIN PAGE
+        document.addEventListener("keydown", keyDownTextField, false);
+
+        function keyDownTextField(e) {
+            var keyCode = e.keyCode;
+            if (keyCode == 77) {
+                Router.push('/')
+            }
+        }
+
+
         // on mount
     }, []);
     return (
