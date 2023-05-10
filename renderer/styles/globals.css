@@ -63,14 +63,20 @@
     font-family: 'DINPro', 'Arial';
 }
 
-html, body {
+
+html,
+body {
+
     --colBlue: #009ADE;
     --colOrange: #FF9E18;
     --colGrey: #575756;
     --colBg: #F5F5F5;
 }
 
+
+
 body {
+    overflow: hidden;
     position: relative;
     width: 100vw;
     height: 100vh;

@@ -58,6 +58,11 @@ export default function Home() {
                             WHO COULD BENEFIT?
                         </Link>
                     </li>
+                    <li>
+                        <Link href='/learn-more'>
+                            LEARN MORE ABOUT
+                        </Link>
+                    </li>
                 </ul>
             </nav> */}
             <nav className={styles.sidebar}>
