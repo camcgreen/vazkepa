@@ -108,13 +108,13 @@
 
 .topCardContainer{
     position: relative;
-    left: 7vw;
-    top: 18vh;
+    left: 3vw;
+    top: 13vh;
 }
 .text{
     position: relative;
     top: -8.5vh;
-    left: -2vw;
+    left: 1vw;
     width: 25vw;
 }
 
@@ -151,6 +151,7 @@
         display: flex;
         flex-direction: row-reverse;
         img{
+            margin-right: 20px;
             width: 2.4vh;
         }
         span{

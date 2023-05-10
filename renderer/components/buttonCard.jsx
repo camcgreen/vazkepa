@@ -16,9 +16,12 @@ export default function ButtonCard({ buttonText = 'null', buttonRefId = '0', fro
             <button id={`id${buttonRefId}`} className={styles.flip__card} onClick={flipCard}>
                 <div className={styles.flip__card__inner}>
                     <div className={styles.flip__card__front}>
+                        <img src='/images/flipButton.png' />
                         {frontText}
                     </div>
                     <div className={styles.flip__card__back}>
+                        <img src='/images/FlipBack.png' />
+
                         {backText}
                     </div>
                 </div>
