@@ -1,0 +1,23 @@
+.bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1080px;
+    object-fit: cover;
+}
+
+.wrapper nav {
+    z-index: 2;
+}
+
+.dashedEllipse {
+    position: absolute;
+    left: 200px;
+    height: 110vh;
+    /* top: 0; */
+    /* width: 1565.56px;
+    height: 1565.56px;
+    left: -1533px;
+    top: calc(50% - 1565.56px/2 + 229.78px); */
+}

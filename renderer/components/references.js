@@ -1,4 +1,4 @@
-import styles from '../styles/Prescribing.module.css';
+import styles from '../styles/References.module.css';
 
 const References = ({ setShowReferencesPopup, imgSrc }) => {
     return (
