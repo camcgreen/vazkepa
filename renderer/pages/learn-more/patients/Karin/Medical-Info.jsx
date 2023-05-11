@@ -14,24 +14,20 @@ export default function KarinMedicalInfo() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'STUDY DESIGN',
-                        link: '/reduce-cv-risk',
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
                     },
                     {
-                        title: 'PRIMARY ENDPOINT',
-                        link: '/reduce-cv-risk/primary-endpoint',
+                        title: 'MEET KARIN',
+                        link: '/learn-more/patients/Karin',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/Karin/Medical-Info',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/secondary-endpoints',
-                    },
-                    {
-                        title: 'SAFETY',
-                        link: '/a-new-paradigm/safety',
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/Karin/VazkepaReduced',
                     },
                 ]}
             />
@@ -73,8 +69,9 @@ export default function KarinMedicalInfo() {
                             </div>
                         </div>
                         <div className={styles.text}>
-                            <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since his event six months ago, Karin has been on standard medical therapy, including statins.                            </span>
+                            <span style={{ paddingTop: '80px', fontWeight: 'inherit', width: '30vw' }}>
+                                Since her MI just over a year ago, Karin<br />has been on standard medicaltherapy,<br />including statins.
+                            </span>
                             {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
                             </span> */}
@@ -92,10 +89,10 @@ export default function KarinMedicalInfo() {
                             frontText='ABOUT'
                             backText={(
                                 <div styles={{ color: 'black !important', zIndex: '3' }}>
-                                    60 years old<br /><br />
-                                    History of high blood pressure but well controlled<br /><br />
-                                    BMI around 28.5<br /><br />
-                                    Six months ago Karin suffered a myocardial infarction
+                                    67 years old<br /><br />
+                                    History of high blood<br />pressure but well controlled<br /><br />
+                                    BMI around 30<br /><br />
+                                    Just over 1 year ago Karin<br />suffered a myocardial<br />infarction
                                 </div>)}
                         />
                         <ButtonCard
@@ -103,11 +100,11 @@ export default function KarinMedicalInfo() {
                             frontText={(<span>CURRENT<br /> MEDICATION</span>)}
                             backText={(
                                 <div>
-                                    Irbesartan 150 mg<br /><br />
+                                    Candesartan 16 mg<br /><br />
                                     Metoprolol 100 mg<br /><br />
                                     Spironolactone 50 mg<br /><br />
                                     Acetylsalicylic acid 75 mg<br /><br />
-                                    Atorvastatin 40 mg
+                                    Rosuvastatin 40 mg
                                 </div>)}
                         />
 
@@ -116,10 +113,10 @@ export default function KarinMedicalInfo() {
                             frontText='CURRENT STATUS'
                             backText={(
                                 <div styles={{ color: 'black !important', zIndex: '3' }}>
-                                    Blood pressure =130/85 mmHg<br /><br />
-                                    LDL-C = 1.45 mmol/L<br /><br />
-                                    HDL-C = 1.15 mmol/L<br /><br />
-                                    TGs = 2.0 mmol/L
+                                    Blood pressure = 125/80<br /> mmHg<br /><br />
+                                    LDL-C = 1.32 mmol/L<br /><br />
+                                    HDL-C = 1.21 mmol/L<br /><br />
+                                    TGs = 1.9 mmol/L
                                 </div>)}
 
                         />
@@ -129,11 +126,11 @@ export default function KarinMedicalInfo() {
                 </div>
 
 
+                <ArrowButtons right left urlRight={'/learn-more/patients/Karin/VazkepaReduced'} />
 
-                <Footer imgSrc='reference-5.1.png' />
+                <Footer imgSrc='reference-5..png' />
             </div>
 
-            <ArrowButtons right left urlRight={'/learn-more/patients/Karin/VazkepaReduced'} />
 
         </div>
     )

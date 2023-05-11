@@ -55,6 +55,7 @@ const Footer = ({
                     <div
                         className={styles.button}
                         onClick={() =>
+
                             setShowReferencesPopup(!showReferencesPopup)
                         }
                     >

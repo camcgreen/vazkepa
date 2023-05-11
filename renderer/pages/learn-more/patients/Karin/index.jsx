@@ -11,24 +11,20 @@ export default function index() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'STUDY DESIGN',
-                        link: '/reduce-cv-risk',
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
                     },
                     {
-                        title: 'PRIMARY ENDPOINT',
-                        link: '/reduce-cv-risk/primary-endpoint',
+                        title: 'MEET KARIN',
+                        link: '/learn-more/patients/Karin',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/Karin/Medical-Info',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/secondary-endpoints',
-                    },
-                    {
-                        title: 'SAFETY',
-                        link: '/a-new-paradigm/safety',
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/Karin/VazkepaReduced',
                     },
                 ]}
             />
@@ -52,8 +48,8 @@ export default function index() {
                         <div>
 
 
-                            <span style={{ paddingTop: '80px', fontSize: '2rem' }}>
-                                Karin is a 63 year old<br />retired landscape gardener<br />who lives at home with his <br />wife, Marianna.
+                            <span style={{ paddingTop: '80px', fontSize: '2rem', width: '30vw' }}>
+                                Karin is 67 years old and recently retired, who lives at home with her <br />5-year-old dachshund, Charlie.
                                 {/*                             </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 He enjoys growing fruit and vegetables in his allotment, going on long hikes and spending time with his three grandchildren. At weekends he plays the ukulele in a band.
                                 <br /><br />Since having a MI six months ago, he worries about the risk of another, and the possibility of missing out on a future with those he loves.

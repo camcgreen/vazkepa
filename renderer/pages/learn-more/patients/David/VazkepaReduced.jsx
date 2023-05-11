@@ -12,35 +12,31 @@ export default function VazkepaReduced() {
 
 
     return (
-        <div>
+        <div >
 
             <Sidebar
                 navItems={[
                     {
-                        title: 'STUDY DESIGN',
-                        link: '/reduce-cv-risk',
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
                     },
                     {
-                        title: 'PRIMARY ENDPOINT',
-                        link: '/reduce-cv-risk/primary-endpoint',
+                        title: 'MEET DAVID',
+                        link: '/learn-more/patients/David',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/David/Medical-Info',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/secondary-endpoints',
-                    },
-                    {
-                        title: 'SAFETY',
-                        link: '/a-new-paradigm/safety',
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/David/VazkepaReduced',
                     },
                 ]}
             />
 
 
-            <div className={`${styles.content} content`} >
+            <div className={` content`} style={{ height: '80%' }}>
                 <h1>
 
                     <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR CABG<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1</sup></span>
@@ -73,7 +69,7 @@ export default function VazkepaReduced() {
                         <img src="\images\learn-more\David\David_Reduced_Arrow.jpg" alt="" />
                     </div>
                 </div>
-                <div className={styles.bottomReducedRisk}>
+                <div className={styles.bottomReducedRisk} >
                     <button
                         onClick={() => {
                             setShowPopup(true);
@@ -91,21 +87,23 @@ export default function VazkepaReduced() {
                         <img src="\images\Pop_up_button.png" alt="" />
                     </button>
                 </div>
-                <p style={{ position: 'relative', top: '3vh', left: '2.5vw', fontSize: '0.8rem' }}>
+                <p style={{ position: 'relative', top: '3vh', left: '2.5vw', fontSize: '0.8rem', }}>
                     * REDUCE-IT was not powered for subgroup analyses.<br />† Time-to-event analysis. The incidence (N%) of primary events was 17.2% in the icosapent ethyl arm vs 22% in the placebo arm, over a median of 4.9 years.1
                 </p>
+
+                <ArrowButtons left />
+
+                <Footer imgSrc='reference-5.1.3.3..png'
+                    popupImgSrc={['/images/reference-5.1.3.1.png', '/images/reference-5.1.3.2.png']}
+                    showPopup={showPopup}
+                    setShowPopup={setShowPopup}
+                    popupIndex={popupIndex}
+                />
             </div>
 
 
-            <ArrowButtons left />
 
 
-            <Footer imgSrc='reference-2.0.png'
-                popupImgSrc={['/images/reference-5.1.3.1.png', '/images/reference-5.1.3.2.png']}
-                showPopup={showPopup}
-                setShowPopup={setShowPopup}
-                popupIndex={popupIndex}
-            />
 
         </div>
 

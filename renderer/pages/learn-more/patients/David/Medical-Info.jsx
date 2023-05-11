@@ -14,24 +14,20 @@ export default function DavidMedicalInfo() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'STUDY DESIGN',
-                        link: '/reduce-cv-risk',
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
                     },
                     {
-                        title: 'PRIMARY ENDPOINT',
-                        link: '/reduce-cv-risk/primary-endpoint',
+                        title: 'MEET DAVID',
+                        link: '/learn-more/patients/David',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/David/Medical-Info',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/secondary-endpoints',
-                    },
-                    {
-                        title: 'SAFETY',
-                        link: '/a-new-paradigm/safety',
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/David/VazkepaReduced',
                     },
                 ]}
             />

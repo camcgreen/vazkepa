@@ -248,10 +248,12 @@ padding-top: 1.2vh;
     flex-grow: 0;
     position: relative;
     top: 2vh;
-    left: 15vw;
-
+    align-self: flex-end;
+    width: 30vw;
     button{
-        z-index: 200;
+        margin-right:2vw ;
+        font-size: 1rem;
+        z-index: 4;
         border: 0;
         background-color: inherit;
         display: flex;
@@ -261,7 +263,6 @@ padding-top: 1.2vh;
         padding: 0px;
         gap: 12px;
 
-        width: 183px;
         height: 60px;
 
         flex: none;

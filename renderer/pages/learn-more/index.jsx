@@ -21,24 +21,20 @@ export default function Home() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'STUDY DESIGN',
-                        link: '/reduce-cv-risk',
+                        title: 'PATIENT CASES',
+                        link: '/learn-more',
                     },
                     {
-                        title: 'PRIMARY ENDPOINT',
-                        link: '/reduce-cv-risk/primary-endpoint',
+                        title: 'ACS PATIENT CASE',
+                        link: '/learn-more/patients/David',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                        title: 'MI PATIENT CASE',
+                        link: '/learn-more//patients/Karin',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
-                        link: '/a-new-paradigm/secondary-endpoints',
-                    },
-                    {
-                        title: 'SAFETY',
-                        link: '/a-new-paradigm/safety',
+                        title: 'PCI PATIENT CASE',
+                        link: '/learn-more/patients/John',
                     },
                 ]}
             />
