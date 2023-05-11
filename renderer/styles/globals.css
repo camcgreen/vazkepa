@@ -87,16 +87,20 @@ body {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     font-weight: 300;
     text-align: center;
     margin-bottom: 40px;
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
     margin-bottom: 40px;
+}
+
+p {
+    font-size: 1rem;
 }
 
 sup {
@@ -201,4 +205,8 @@ sup {
     z-index: 3;
     transform: rotate(12deg);
     height: 150vh;
+}
+
+.fade {
+    transition: opacity 0.2s ease-in-out;
 }

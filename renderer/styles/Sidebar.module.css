@@ -28,6 +28,10 @@
     transform: translateY(-64px);
 }
 
+.sidebar ul li a {
+    max-width: 300px;
+}
+
 .dashedEllipse {
     position: absolute;
     left: 0;

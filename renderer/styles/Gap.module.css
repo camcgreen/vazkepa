@@ -145,3 +145,109 @@
 .cardsGuidelines li span {
     color: var(--colBlue);
 }
+
+.studyDesign1 {
+    width: 804px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.buttonBaseline {
+    cursor: pointer;
+    /* position: fixed;
+    right: 40px;
+    bottom: 100px; */
+    width: 300px;
+    align-self: flex-end;
+    margin-bottom: 80px;
+}
+
+.primaryEndpoint1 {
+    width: 818px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.primaryEndpointButtons {
+    display: flex;
+    align-self: flex-end;
+    margin-top: 40px;
+}
+
+.primaryEndpointButtons img {
+    margin-right: 40px;
+}
+
+.primaryEndpointButtons img:first-of-type {
+    width: 300px;
+}
+
+.primaryEndpointButtons img:last-of-type {
+    width: 400px;
+}
+
+.primarySecondaryGrid {
+    align-self: center;
+    display: grid;
+    grid-template-rows: auto 369px auto;
+    grid-template-columns: repeat(2, 369px);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+}
+
+.primarySecondaryGrid p {
+    text-align: center;
+}
+
+.primarySecondaryGrid img {
+    width: 379px;
+}
+
+.primarySecondaryFootnote {
+    margin-top: 40px;
+    width: 890px;
+}
+
+.secondaryHeader {
+    width: 779px;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.secondaryButtons {
+    width: 779px;
+    height: 248px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.secondaryButtons img {
+    width: 242px;
+    align-self: start;  
+
+}
+
+.secondaryFootnote {
+    position: absolute;
+    bottom: 80px;
+    width: 955px;
+    align-self: center;
+}
+
+.safety1 {
+    width: 615px;  
+    align-self: center; 
+    margin-bottom: 20px;
+}
+
+.safety2 {
+    width: 819px;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+.safety3 {
+    width: 1040px;
+    align-self: center;
+}
