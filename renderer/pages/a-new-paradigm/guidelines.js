@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import styles from '../../styles/Gap.module.css';
 import Footer from '../../components/footer';
 import Sidebar from '../../components/sidebar';
+import ButtonCard from '../../components/buttonCard';
 
 export default function Guidelines() {
     const [showPopup, setShowPopup] = useState(false);
@@ -38,6 +39,62 @@ export default function Guidelines() {
                     Recommendations for drug treatments of high-risk patients
                     with hypertriglyceridaemia to reduce CV risk<sup>1,2</sup>
                 </h2>
+                <div className={styles.cardsGuidelines}>
+                    <ButtonCard
+                        buttonRefId={1}
+                        frontText='ESC/EAS GUIDELINES FOR THE MANAGEMENT OF DYSLIPIDAEMIAS 20193'
+                        backText={
+                            <ul
+                                styles={{
+                                    color: 'black !important',
+                                    zIndex: '3',
+                                }}
+                            >
+                                <li>
+                                    {
+                                        'Statin treatment is recommended as a first drug of choice for reduce CVD risk in high-risk individuals with hypertriglyceridaemia (TG>2.3mmol/L [>200mg/dL]). Class I, Level B'
+                                    }
+                                </li>
+                                <li>
+                                    In high-risk (or above) patients with TG
+                                    between 1.5 and 5.6 mmol/L (135-499mg/dL)*
+                                    despite statin treatment, n-3 PUFAs (
+                                    <span>icosapent ethyl</span> 2 x 2 g/day)
+                                    should be considered in combination with
+                                    statin. Class IIa, Level B
+                                </li>
+                            </ul>
+                        }
+                    />
+                    <ButtonCard
+                        buttonRefId={2}
+                        frontText='ESC GUIDELINES CARDIOVASCULAR DISEASE PREVENTION IN CLINICAL PRACTICE 20212'
+                        backText={
+                            <ul
+                                styles={{
+                                    color: 'black !important',
+                                    zIndex: '3',
+                                }}
+                            >
+                                <li>
+                                    {
+                                        'Statin treatment is recommended as the first drug of choice for reducing CVD risk in high-risk individuals with hypertriglyceridaemia (triglycerides >2.3mmol/L [>200 mg/dL]). Class I, Level A'
+                                    }
+                                </li>
+                                <li>
+                                    {
+                                        'In high-risk (or above) patients with triglycerides >1.5 mmol/L (>'
+                                    }
+                                    135mg/dL)* despite statin treatment and
+                                    lifestyle measures, n-3 PUFAs (
+                                    <span>icosapent ethyl</span> 2 x 2 g/day)
+                                    may be considered in combination with a
+                                    statin Class IIb, Level B
+                                </li>
+                            </ul>
+                        }
+                    />
+                </div>
                 <img
                     className='prev'
                     src='/images/prev.svg'

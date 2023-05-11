@@ -87,7 +87,7 @@ const Sidebar = ({ navItems }) => {
                         </li>
                     ))}
                     {/* <Link href='/'> */}
-                    <Link href='/learn-more/patients/David-Medical-Info'>
+                    <Link href='/learn-more/patients/David/Medical-Info'>
                         <img
                             src='/images/home.svg'
                             alt=''
