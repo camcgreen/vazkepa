@@ -78,3 +78,44 @@
 .buttonElevated2 {
     width: 236px;
 }
+
+.whatIsVazkepa1 {
+    width: 1022px;
+    align-self: center;
+    margin-top: 40px;
+}
+
+.buttonWhat {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 236px;
+}
+
+.howDoesVazkepa1 {
+    width: 852px;
+    align-self: center;
+    /* margin-top: 40px; */
+}
+
+.buttonHow {
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 100px;
+    width: 236px;
+}
+
+.howNote {
+    position: fixed;
+    left: 790px;
+    bottom: 90px;
+    max-width: 800px;
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+.howNote sup {
+    font-size: 0.5rem;
+}

@@ -20,7 +20,7 @@ export default function Home() {
         },
         {
             title: 'PATIENTS WHO\n CAN BENEFIT',
-            link: '/patients-who-can-benefit',
+            link: '/learn-more',
         },
     ];
     useEffect(() => {

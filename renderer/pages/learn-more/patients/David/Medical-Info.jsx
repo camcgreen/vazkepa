@@ -68,6 +68,7 @@ export default function DavidMedicalInfo() {
 
                     <div className={styles.infoCards}>
 
+<<<<<<< Updated upstream:renderer/pages/learn-more/patients/David/Medical-Info.jsx
                         <ButtonCard
                             buttonRefId={1}
                             frontText='ABOUT'
@@ -104,6 +105,11 @@ export default function DavidMedicalInfo() {
                                 </div>)}
 
                         />
+=======
+                        <ButtonCard buttonText='ABOUT' frontText='new' backText='hello' buttonRefId={1} />
+                        <ButtonCard buttonText='CURRENT MEDICATION' buttonRefId={2} />
+                        <ButtonCard buttonText='CURRENT STATUS' buttonRefId={3} />
+>>>>>>> Stashed changes:renderer/pages/learn-more/patients/David-Medical-Info.jsx
 
 
                     </div>
