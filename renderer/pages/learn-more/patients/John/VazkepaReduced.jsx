@@ -13,7 +13,7 @@ export default function VazkepaReduced() {
             <div className={`${styles.content} content`} >
                 <h1>
 
-                    VAZKEPA REDUCED <span className='blue'>JOHN*</span>
+                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH PRIOR CABG1
 
 
                 </h1>

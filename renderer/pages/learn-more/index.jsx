@@ -28,21 +28,21 @@ export default function Home() {
 
                 <div className={styles.profiles}>
                     <div>
-                        <img src='/images/learn-more/David.png' alt='' />
+                        <img src='/images/learn-more/David/David.png' alt='' />
                         <button onClick={() => {
                             Router.push('/learn-more/patients/David')
                         }}>MEET DAVID*</button>
                         <span>an ACS patient</span>
                     </div>
                     <div>
-                        <img src='/images/learn-more/Karin.png' alt='' />
+                        <img src='/images/learn-more/Karin/Karin.png' alt='' />
                         <button onClick={() => {
                             Router.push('/learn-more/patients/Karin')
                         }}>MEET KARIN*</button>
                         <span>a recent MI patient</span>
                     </div>
                     <div>
-                        <img src='/images/learn-more/John.png' alt='' />
+                        <img src='/images/learn-more/John/John.png' alt='' />
                         <button onClick={() => {
                             Router.push('/learn-more/patients/John')
                         }}>MEET JOHN*</button>

@@ -23,7 +23,7 @@ export default function index() {
 
                     <div className={`${styles.profiles} ${styles.singleCard}`}>
                         <div>
-                            <img src='/images/learn-more/John.png' alt='' />
+                            <img src='/images/learn-more/John/John.png' alt='' />
 
                         </div>
                         <div>

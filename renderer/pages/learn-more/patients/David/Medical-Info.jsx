@@ -28,8 +28,6 @@ export default function DavidMedicalInfo() {
 
                     <div className={`${styles.profiles} ${styles.singleCard} ${styles.topCardContainer}`} style={{ alignItems: 'flex-start', height: '80vh' }}>
                         <div className={styles.topCard}>
-
-
                             <div>
                                 <span>
                                     Suffered a MI one year ago
@@ -50,18 +48,14 @@ export default function DavidMedicalInfo() {
                             </div>
                         </div>
                         <div className={styles.text}>
-
-
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since her MI just over a year ago, Karin has been on standard medical therapy, including statins.
-                            </span>
-                            <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                                Since his event six months ago, David has been on standard medical therapy, including statins.                            </span>
+                            {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
-                            </span>
+                            </span> */}
 
                             <span style={{ paddingTop: '0px' }}>
-                                Patients like Karin may need more help to reduce the risk of CV in the future
-                            </span>
+                                Patients like David may need more help to reduce the risk of CV events in the future.                            </span>
                         </div>
 
                     </div>

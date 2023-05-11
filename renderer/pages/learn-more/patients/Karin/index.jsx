@@ -25,7 +25,7 @@ export default function index() {
                     <div className={`${styles.profiles} ${styles.singleCard}`}>
                         <div style={{ position: 'relative', top: '2vh' }}>
 
-                            <img src='/images/learn-more/Karin.png' alt='' />
+                            <img src='/images/learn-more/Karin/Karin.png' alt='' />
 
                         </div>
                         <div>

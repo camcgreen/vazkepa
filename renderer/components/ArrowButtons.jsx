@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function ArrowButtons({ right, left, urlRight, urlLeft }) {
     return (
-        <div style={{ zIndex: '2', position: 'absolute', display: 'flex', justifyContent: 'space-between', top: '45%', left: '32%', width: '65vw' }}>
+        <div style={{ zIndex: '200', position: 'absolute', display: 'flex', justifyContent: 'space-between', top: '45%', left: '32%', width: '65vw' }}>
             <div style={{ scale: '-1' }} >
 
                 {left &&
