@@ -161,6 +161,7 @@ sup {
     justify-content: center;
     align-items: center;
     transition: opacity 0.2s ease-in-out;
+    z-index: 49;
 }
 
 .navLi {

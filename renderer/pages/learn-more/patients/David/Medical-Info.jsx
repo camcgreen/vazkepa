@@ -4,14 +4,39 @@ import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
 import ButtonCard from '../../../../components/buttonCard';
-
+import Sidebar from '../../../../components/sidebar';
 
 export default function DavidMedicalInfo() {
 
 
     return (
         <div>
-            <ArrowButtons right left urlRight={'/learn-more/patients/David/VazkepaReduced'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
+
+
             <div className={`${styles.content} content`} >
                 <h1>
 
@@ -21,7 +46,7 @@ export default function DavidMedicalInfo() {
                 </h1>
 
                 <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`} style={{
-                    top: '-10vh', flexDirection: 'column', left: '-8vw'
+                    top: '-5vh', flexDirection: 'column', left: '-2vw'
                     , width: '61vw'
                 }}>
 
@@ -104,7 +129,9 @@ export default function DavidMedicalInfo() {
                 </div>
 
 
-                <Footer imgSrc='reference-2.0.png' />
+
+                <ArrowButtons right left urlRight={'/learn-more/patients/David/VazkepaReduced'} />
+                <Footer imgSrc='/reference-5.1.2.1.png' />
             </div>
 
 

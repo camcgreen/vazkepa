@@ -2,58 +2,44 @@ import React from 'react'
 import styles from '../../../../styles/LearnMore.module.scss';
 import Footer from '../../../../components/footer';
 import ArrowButtons from '../../../../components/ArrowButtons';
-import ButtonCard from '../../../../components/buttonCard';
-import { useRouter } from 'next/router';
-
-
+import Sidebar from '../../../../components/sidebar'
 
 export default function VazkepaReduced() {
 
-    const router = useRouter();
-
-
-    const navItems = [
-        {
-            title: 'CV RISK MANAGEMENT:\n IS THERE A GAP?',
-            link: '/wheres-the-gap',
-        },
-        {
-            title: 'A NEW PARADIGM IN\n CV RISK MANAGEMENT',
-            link: '/a-new-paradigm',
-        },
-        {
-            title: 'REDUCE CV RISK\n WITH VAZKEPA',
-            link: '/reduce-cv-risk',
-        },
-        {
-            title: 'PATIENTS WHO\n CAN BENEFIT',
-            link: '/patients-who-can-benefit',
-        },
-    ];
-
-
-
-    React.useEffect(() => {
-        const navLinks = document.querySelectorAll('.navLi');
-        navLinks[0].style.left = '375px';
-        navLinks[0].style.top = '27.5%';
-        navLinks[1].style.left = '410px';
-        navLinks[1].style.top = '42.5%';
-        navLinks[2].style.left = '415px';
-        navLinks[2].style.top = '57.5%';
-        navLinks[3].style.left = '390px';
-        navLinks[3].style.top = '72.5%';
-    }, []);
-
-
-
-
+    const [showPopup, setShowPopup] = React.useState(false)
+    const [popupIndex, setPopupIndex] = React.useState(0);
 
 
 
     return (
         <div>
-            <ArrowButtons left />
+
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
+
+
             <div className={`${styles.content} content`} >
                 <h1>
 
@@ -88,11 +74,19 @@ export default function VazkepaReduced() {
                     </div>
                 </div>
                 <div className={styles.bottomReducedRisk}>
-                    <button>
+                    <button
+                        onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(0);
+                        }}
+                    >
                         Total events
                         <img src="\images\Pop_up_button.png" alt="" />
                     </button>
-                    <button>
+                    <button onClick={() => {
+                        setShowPopup(true);
+                        setPopupIndex(1);
+                    }}>
                         Safety in ACS subgroup
                         <img src="\images\Pop_up_button.png" alt="" />
                     </button>
@@ -102,57 +96,17 @@ export default function VazkepaReduced() {
                 </p>
             </div>
 
-            {navItems.map((item, i) => (
-                <li
-                    className='navLi'
-                    onClick={() => router.push(item.link)}
-                // style={{
-                //     transform:
-                //         router.pathname === item.link
-                //             ? 'translateX(0)'
-                //             : 'translateX(0)',
-                // }}
-                >
-                    <img
-                        src={
-                            router.pathname === item.link
-                                ? '/images/hotspot-filled.svg'
-                                : '/images/hotspot.svg'
-                        }
-                        alt=''
-                    />
-                    <a
-                        className='navLiLink'
-                        style={{
-                            backgroundColor:
-                                router.pathname === item.link
-                                    ? 'white'
-                                    : 'rgba(0, 0, 0, 0)',
-                            color:
-                                router.pathname === item.link
-                                    ? '#009ADE'
-                                    : 'white',
-                            padding:
-                                router.pathname === item.link
-                                    ? '16px 10px'
-                                    : '0',
-                            maxWidth:
-                                i === 0
-                                    ? 270
-                                    : i === 1
-                                        ? 250
-                                        : i === 2
-                                            ? 240
-                                            : 200,
-                        }}
-                    >
-                        {item.title}
-                    </a>
-                </li>
-            ))}
+
+            <ArrowButtons left />
 
 
-            <Footer imgSrc='reference-2.0.png' />
+            <Footer imgSrc='reference-2.0.png'
+                popupImgSrc={['/images/reference-5.1.3.1.png', '/images/reference-5.1.3.2.png']}
+                showPopup={showPopup}
+                setShowPopup={setShowPopup}
+                popupIndex={popupIndex}
+            />
+
         </div>
 
 

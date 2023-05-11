@@ -3,12 +3,35 @@ import styles from '../../../../styles/LearnMore.module.scss';
 import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
+import Sidebar from '../../../../components/sidebar';
 
 export default function index() {
     return (
         <div>
-
-            <ArrowButtons right urlRight={'/learn-more/patients/David/Medical-Info'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
 
             <div className={`${styles.content} content`} >
                 <h1>
@@ -45,6 +68,7 @@ export default function index() {
                 <Footer imgSrc='reference-2.0.png' />
             </div>
 
+            <ArrowButtons right urlRight={'/learn-more/patients/David/Medical-Info'} />
 
         </div>
     )

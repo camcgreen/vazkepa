@@ -4,32 +4,55 @@ import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
 import ButtonCard from '../../../../components/buttonCard';
+import Sidebar from '../../../../components/sidebar';
 
-
-export default function DavidMedicalInfo() {
+export default function KarinMedicalInfo() {
 
 
     return (
         <div>
-            <ArrowButtons right left urlRight={'/learn-more/patients/Karin/VazkepaReduced'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
+
+
             <div className={`${styles.content} content`} >
                 <h1>
 
-                    MEET <span className='blue'>KARIN*</span>
+                    MEET <span className='blue'>Karin*</span>
 
 
                 </h1>
 
                 <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`} style={{
-                    top: '-10vh', flexDirection: 'column', left: '-8vw'
+                    top: '-5vh', flexDirection: 'column', left: '-2vw'
                     , width: '61vw'
                 }}>
 
 
                     <div className={`${styles.profiles} ${styles.singleCard} ${styles.topCardContainer}`} style={{ alignItems: 'flex-start', height: '80vh' }}>
                         <div className={styles.topCard}>
-
-
                             <div>
                                 <span>
                                     Suffered a MI one year ago
@@ -50,18 +73,14 @@ export default function DavidMedicalInfo() {
                             </div>
                         </div>
                         <div className={styles.text}>
-
-
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since her MI just over a year ago, Karin has been on standard medical therapy, including statins.
-                            </span>
-                            <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                                Since his event six months ago, Karin has been on standard medical therapy, including statins.                            </span>
+                            {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
-                            </span>
+                            </span> */}
 
                             <span style={{ paddingTop: '0px' }}>
-                                Patients like Karin may need more help to reduce the risk of CV in the future
-                            </span>
+                                Patients like Karin may need more help to reduce the risk of CV events in the future.                            </span>
                         </div>
 
                     </div>
@@ -76,7 +95,7 @@ export default function DavidMedicalInfo() {
                                     60 years old<br /><br />
                                     History of high blood pressure but well controlled<br /><br />
                                     BMI around 28.5<br /><br />
-                                    Six months ago David suffered a myocardial infarction
+                                    Six months ago Karin suffered a myocardial infarction
                                 </div>)}
                         />
                         <ButtonCard
@@ -110,9 +129,11 @@ export default function DavidMedicalInfo() {
                 </div>
 
 
-                <Footer imgSrc='reference-2.0.png' />
+
+                <Footer imgSrc='reference-5.1.png' />
             </div>
 
+            <ArrowButtons right left urlRight={'/learn-more/patients/Karin/VazkepaReduced'} />
 
         </div>
     )

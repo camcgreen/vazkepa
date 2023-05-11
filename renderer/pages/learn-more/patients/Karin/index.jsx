@@ -3,18 +3,40 @@ import styles from '../../../../styles/LearnMore.module.scss';
 import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
-
-
+import Sidebar from '../../../../components/sidebar';
 
 export default function index() {
     return (
         <div>
-            <ArrowButtons right urlRight={'/learn-more/patients/Karin/Medical-Info'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
 
             <div className={`${styles.content} content`} >
                 <h1>
 
-                    MEET <span className='blue'>KARIN*</span>
+                    MEET <span className='blue'>Karin*</span>
 
 
                 </h1>
@@ -23,21 +45,19 @@ export default function index() {
 
 
                     <div className={`${styles.profiles} ${styles.singleCard}`}>
-                        <div style={{ position: 'relative', top: '2vh' }}>
-
+                        <div>
                             <img src='/images/learn-more/Karin/Karin.png' alt='' />
 
                         </div>
                         <div>
 
 
-                            <span style={{ width: '21vw', paddingTop: '80px' }}>
-                                Karin is 67 years old and recently retired, who lives at home with her <br />5-year-old dachshund, Charlie.
-                            </span><span style={{ width: '24vw', paddingTop: '0px', fontWeight: 'inherit' }}>
-                                She enjoys socialising with friends and going for walks with Charlie. She’s equally happy to curl up with a good book at the weekend.
-                                <br /><br />
-                                She has a history of high blood pressure, but it’s well controlled. Since Karin suffering a myocardial infarction just over a year ago, she worries about the risk of another, and what would happen to Charlie if she wasn’t around.
-
+                            <span style={{ paddingTop: '80px', fontSize: '2rem' }}>
+                                Karin is a 63 year old<br />retired landscape gardener<br />who lives at home with his <br />wife, Marianna.
+                                {/*                             </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                                He enjoys growing fruit and vegetables in his allotment, going on long hikes and spending time with his three grandchildren. At weekends he plays the ukulele in a band.
+                                <br /><br />Since having a MI six months ago, he worries about the risk of another, and the possibility of missing out on a future with those he loves.
+                             */}
                             </span>
                         </div>
 
@@ -48,20 +68,8 @@ export default function index() {
                 <Footer imgSrc='reference-2.0.png' />
             </div>
 
+            <ArrowButtons right urlRight={'/learn-more/patients/Karin/Medical-Info'} />
 
         </div>
     )
 }
-
-
-/* 
-
-
-
-Karin is 67 years old and recently retired, who lives at home with her 5-year-old dachshund, Charlie.
-
-
-
-
-
-*/

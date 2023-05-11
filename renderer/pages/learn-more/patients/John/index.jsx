@@ -3,12 +3,35 @@ import styles from '../../../../styles/LearnMore.module.scss';
 import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
-
+import Sidebar from '../../../../components/sidebar';
 
 export default function index() {
     return (
         <div>
-            <ArrowButtons right urlRight={'/learn-more/patients/John/Medical-Info'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'STUDY DESIGN',
+                        link: '/reduce-cv-risk',
+                    },
+                    {
+                        title: 'PRIMARY ENDPOINT',
+                        link: '/reduce-cv-risk/primary-endpoint',
+                    },
+                    {
+                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/primary-secondary-endpoints',
+                    },
+                    {
+                        title: 'SECONDARY ENDPOINTS',
+                        link: '/a-new-paradigm/secondary-endpoints',
+                    },
+                    {
+                        title: 'SAFETY',
+                        link: '/a-new-paradigm/safety',
+                    },
+                ]}
+            />
 
             <div className={`${styles.content} content`} >
                 <h1>
@@ -29,12 +52,12 @@ export default function index() {
                         <div>
 
 
-                            <span style={{ paddingTop: '80px' }}>
-                                John is 72 years old and used to work in a bank, he lives alone in the city.
-                            </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
-                                Before his revascularisation procedure for a MI two months ago, John regularly travelled. He discovered a flare for baking since retiring and occasionally cycles.
-                                <br /><br />
-                                John worries about the impact that his lifestyle has on his health, whilst comorbidities put him at high cardiovascular risk. He’s working with his healthcare professional to implement ways he can reduce his risk.
+                            <span style={{ paddingTop: '80px', fontSize: '2rem' }}>
+                                John is a 63 year old<br />retired landscape gardener<br />who lives at home with his <br />wife, Marianna.
+                                {/*                             </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                                He enjoys growing fruit and vegetables in his allotment, going on long hikes and spending time with his three grandchildren. At weekends he plays the ukulele in a band.
+                                <br /><br />Since having a MI six months ago, he worries about the risk of another, and the possibility of missing out on a future with those he loves.
+                             */}
                             </span>
                         </div>
 
@@ -45,7 +68,8 @@ export default function index() {
                 <Footer imgSrc='reference-2.0.png' />
             </div>
 
+            <ArrowButtons right urlRight={'/learn-more/patients/John/Medical-Info'} />
 
-        </div >
+        </div>
     )
 }
