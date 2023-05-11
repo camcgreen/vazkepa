@@ -1,21 +1,19 @@
 import React from 'react'
-import styles from '../../../styles/LearnMore.module.scss';
-import Footer from '../../../components/footer';
+import styles from '../../../../styles/LearnMore.module.scss';
+import Footer from '../../../../components/footer';
 import Router from 'next/router';
-import ArrowButtons from '../../../components/ArrowButtons'
-import ButtonCard from '../../../components/buttonCard';
+import ArrowButtons from '../../../../components/ArrowButtons';
+import ButtonCard from '../../../../components/buttonCard';
 
 
-export default function DavidMedicalInfo() {
-
-
+export default function VazkepaReduced() {
     return (
         <div>
-            <ArrowButtons right left />
+            <ArrowButtons left />
             <div className={`${styles.content} content`} >
                 <h1>
 
-                    MEET <span className='blue'>DAVID*</span>
+                    VAZKEPA REDUCED <span className='blue'>Karin*</span>
 
 
                 </h1>
@@ -68,9 +66,42 @@ export default function DavidMedicalInfo() {
 
                     <div className={styles.infoCards}>
 
-                        <ButtonCard buttonText='ABOUT' buttonRefId={1} />
-                        <ButtonCard buttonText='CURRENT MEDICATION' buttonRefId={2} />
-                        <ButtonCard buttonText='CURRENT STATUS' buttonRefId={3} />
+                        <ButtonCard
+                            buttonRefId={1}
+                            frontText='ABOUT'
+                            backText={(
+                                <div styles={{ color: 'black !important', zIndex: '3' }}>
+                                    60 years old<br /><br />
+                                    History of high blood pressure but well controlled<br /><br />
+                                    BMI around 28.5<br /><br />
+                                    Six months ago David suffered a myocardial infarction
+                                </div>)}
+                        />
+                        <ButtonCard
+                            buttonRefId={2}
+                            frontText={(<span>CURRENT<br /> MEDICATION</span>)}
+                            backText={(
+                                <div>
+                                    Irbesartan 150 mg<br /><br />
+                                    Metoprolol 100 mg<br /><br />
+                                    Spironolactone 50 mg<br /><br />
+                                    Acetylsalicylic acid 75 mg<br /><br />
+                                    Atorvastatin 40 mg
+                                </div>)}
+                        />
+
+                        <ButtonCard
+                            buttonRefId={3}
+                            frontText='CURRENT STATUS'
+                            backText={(
+                                <div styles={{ color: 'black !important', zIndex: '3' }}>
+                                    Blood pressure =130/85 mmHg<br /><br />
+                                    LDL-C = 1.45 mmol/L<br /><br />
+                                    HDL-C = 1.15 mmol/L<br /><br />
+                                    TGs = 2.0 mmol/L
+                                </div>)}
+
+                        />
 
 
                     </div>

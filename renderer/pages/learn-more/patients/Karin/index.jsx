@@ -1,13 +1,16 @@
 import React from 'react'
-import styles from '../../../styles/LearnMore.module.scss';
-import Footer from '../../../components/footer';
+import styles from '../../../../styles/LearnMore.module.scss';
+import Footer from '../../../../components/footer';
 import Router from 'next/router';
+import ArrowButtons from '../../../../components/ArrowButtons';
 
 
 
-export default function Karin() {
+export default function index() {
     return (
         <div>
+            <ArrowButtons right urlRight={'/learn-more/patients/Karin/Medical-Info'} />
+
             <div className={`${styles.content} content`} >
                 <h1>
 
