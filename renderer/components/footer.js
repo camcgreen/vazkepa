@@ -70,11 +70,11 @@ const Footer = ({
                 <div className={styles.right}>
                     {isMedicalInfoPage() == true ?
 
-                        <div
+                        <div style={{ opacity: '0.5' }}
                             className={styles.button}
                         >
                             <img src='/images/references.svg' alt='' />
-                            <p style={{ opacity: '0.5' }}>REFERENCES</p>
+                            <p >REFERENCES</p>
                         </div>
 
                         :
@@ -99,19 +99,21 @@ const Footer = ({
                         <p>PRESCRIBING INFORMATION</p>
                     </div>
                 </div>
-            </footer>
+            </footer >
             <Prescribing setShowPrescribingPopup={setShowPrescribingPopup} />
             <References
                 setShowReferencesPopup={setShowReferencesPopup}
                 imgSrc={imgSrc}
             />
-            {popupImgSrc && (
-                <Popup
-                    setShowPopup={setShowPopup}
-                    popupImgSrc={[...popupImgSrc]}
-                    popupIndex={popupIndex}
-                />
-            )}
+            {
+                popupImgSrc && (
+                    <Popup
+                        setShowPopup={setShowPopup}
+                        popupImgSrc={[...popupImgSrc]}
+                        popupIndex={popupIndex}
+                    />
+                )
+            }
         </>
     );
 };
