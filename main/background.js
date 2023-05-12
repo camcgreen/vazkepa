@@ -15,8 +15,8 @@ if (isProd) {
     const mainWindow = createWindow('main', {
         width: 1920,
         height: 1080,
-        // fullscreen: true,
-        // autoHideMenuBar: true
+        fullscreen: true,
+        autoHideMenuBar: true,
     });
 
     if (isProd) {
