@@ -1,3 +1,8 @@
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
 @font-face {
     font-family: 'DINPro';
     src: url('/fonts/DINPro-Light.ttf');
@@ -120,6 +125,7 @@ sup {
     flex-direction: column;
     /* justify-content: space-between; */
     z-index: 4;
+    animation: fadeIn 0.4s ease-in-out;
 }
 
 .footnotes {
