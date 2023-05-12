@@ -4,14 +4,35 @@ import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
 import ButtonCard from '../../../../components/buttonCard';
-
+import Sidebar from '../../../../components/sidebar';
 
 export default function DavidMedicalInfo() {
 
 
     return (
         <div>
-            <ArrowButtons right left urlRight={'/learn-more/patients/David/VazkepaReduced'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
+                    },
+                    {
+                        title: 'MEET DAVID',
+                        link: '/learn-more/patients/David',
+                    },
+                    {
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/David/Medical-Info',
+                    },
+                    {
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/David/VazkepaReduced',
+                    },
+                ]}
+            />
+
+
             <div className={`${styles.content} content`} >
                 <h1>
 
@@ -21,15 +42,13 @@ export default function DavidMedicalInfo() {
                 </h1>
 
                 <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`} style={{
-                    top: '-10vh', flexDirection: 'column', left: '-8vw'
+                    top: '-5vh', flexDirection: 'column', left: '-2vw'
                     , width: '61vw'
                 }}>
 
 
                     <div className={`${styles.profiles} ${styles.singleCard} ${styles.topCardContainer}`} style={{ alignItems: 'flex-start', height: '80vh' }}>
                         <div className={styles.topCard}>
-
-
                             <div>
                                 <span>
                                     Suffered a MI one year ago
@@ -50,18 +69,14 @@ export default function DavidMedicalInfo() {
                             </div>
                         </div>
                         <div className={styles.text}>
-
-
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since her MI just over a year ago, Karin has been on standard medical therapy, including statins.
-                            </span>
-                            <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                                Since his event six months ago, David has been on standard medical therapy, including statins.                            </span>
+                            {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
-                            </span>
+                            </span> */}
 
                             <span style={{ paddingTop: '0px' }}>
-                                Patients like Karin may need more help to reduce the risk of CV in the future
-                            </span>
+                                Patients like David may need more help to reduce the risk of CV events in the future.                            </span>
                         </div>
 
                     </div>
@@ -110,7 +125,9 @@ export default function DavidMedicalInfo() {
                 </div>
 
 
-                <Footer imgSrc='reference-2.0.png' />
+
+                <ArrowButtons right left urlRight={'/learn-more/patients/David/VazkepaReduced'} />
+                <Footer imgSrc='/reference-5.1.2.1.png' />
             </div>
 
 

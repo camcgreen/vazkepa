@@ -4,14 +4,35 @@ import Footer from '../../../../components/footer';
 import Router from 'next/router';
 import ArrowButtons from '../../../../components/ArrowButtons';
 import ButtonCard from '../../../../components/buttonCard';
+import Sidebar from '../../../../components/sidebar';
 
-
-export default function DavidMedicalInfo() {
+export default function JohnMedicalInfo() {
 
 
     return (
         <div>
-            <ArrowButtons right left urlRight={'/learn-more/patients/John/VazkepaReduced'} />
+            <Sidebar
+                navItems={[
+                    {
+                        title: 'BACK TO PATIENTS',
+                        link: '/learn-more',
+                    },
+                    {
+                        title: 'MEET JOHN',
+                        link: '/learn-more/patients/John',
+                    },
+                    {
+                        title: 'MEDICAL INFO',
+                        link: '/learn-more/patients/John/Medical-Info',
+                    },
+                    {
+                        title: 'SUBGROUP PRIOR PCI',
+                        link: '/learn-more/patients/John/VazkepaReduced',
+                    },
+                ]}
+            />
+
+
             <div className={`${styles.content} content`} >
                 <h1>
 
@@ -21,18 +42,16 @@ export default function DavidMedicalInfo() {
                 </h1>
 
                 <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`} style={{
-                    top: '-10vh', flexDirection: 'column', left: '-8vw'
+                    top: '-5vh', flexDirection: 'column', left: '-2vw'
                     , width: '61vw'
                 }}>
 
 
                     <div className={`${styles.profiles} ${styles.singleCard} ${styles.topCardContainer}`} style={{ alignItems: 'flex-start', height: '80vh' }}>
                         <div className={styles.topCard}>
-
-
                             <div>
                                 <span>
-                                    Suffered a MI one year ago
+                                    Suffered a MI two months ago
                                 </span>
                                 <img src='/images/Warning.png' />
                             </div>
@@ -44,23 +63,21 @@ export default function DavidMedicalInfo() {
                             </div>
                             <div>
                                 <span>
-                                    Increased TGs values (1.9 mmol/L)
+                                    Increased TGs values (2.1 mmol/L)
                                 </span>
                                 <img src='/images/DownArrow.png' />
                             </div>
                         </div>
                         <div className={styles.text}>
-
-
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since her MI just over a year ago, Karin has been on standard medical therapy, including statins.
+                                John is a 72 year old retired banker, who has a<br />history of hypertension and Type 2 diabetes.
                             </span>
-                            <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
+                            {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
-                            </span>
+                            </span> */}
 
                             <span style={{ paddingTop: '0px' }}>
-                                Patients like Karin may need more help to reduce the risk of CV in the future
+                                Patients like John may need more help to<br />reduce the risk of CV events in the future.
                             </span>
                         </div>
 
@@ -73,10 +90,9 @@ export default function DavidMedicalInfo() {
                             frontText='ABOUT'
                             backText={(
                                 <div styles={{ color: 'black !important', zIndex: '3' }}>
-                                    60 years old<br /><br />
-                                    History of high blood pressure but well controlled<br /><br />
-                                    BMI around 28.5<br /><br />
-                                    Six months ago David suffered a myocardial infarction
+                                    72 years old<br /><br />
+                                    Has a 10 year history of<br />hypertension and Type<br />2 diabetes which is<br />well managed<br /><br />
+                                    John experienced a<br />myocardial infarction<br />and had a subsequent<br />revascularisation<br />procedure
                                 </div>)}
                         />
                         <ButtonCard
@@ -84,11 +100,12 @@ export default function DavidMedicalInfo() {
                             frontText={(<span>CURRENT<br /> MEDICATION</span>)}
                             backText={(
                                 <div>
-                                    Irbesartan 150 mg<br /><br />
-                                    Metoprolol 100 mg<br /><br />
-                                    Spironolactone 50 mg<br /><br />
+                                    Atorvastatin 80 mg<br /><br />
                                     Acetylsalicylic acid 75 mg<br /><br />
-                                    Atorvastatin 40 mg
+                                    Brilique 90 mg BD<br /><br />
+                                    Metoprolol 100 mg<br /><br />
+                                    Enalapril 20 mg<br /><br />
+                                    Metformin 3 x 500 mg
                                 </div>)}
                         />
 
@@ -97,10 +114,10 @@ export default function DavidMedicalInfo() {
                             frontText='CURRENT STATUS'
                             backText={(
                                 <div styles={{ color: 'black !important', zIndex: '3' }}>
-                                    Blood pressure =130/85 mmHg<br /><br />
-                                    LDL-C = 1.45 mmol/L<br /><br />
-                                    HDL-C = 1.15 mmol/L<br /><br />
-                                    TGs = 2.0 mmol/L
+                                    Blood pressure<br />= 130/90 mmHg<br /><br />
+                                    LDL-C = 1.49 mmol/L<br /><br />
+                                    HDL-C = 1.39 mmol/L<br /><br />
+                                    TGs = 2.1 mmol/L
                                 </div>)}
 
                         />
@@ -110,7 +127,9 @@ export default function DavidMedicalInfo() {
                 </div>
 
 
-                <Footer imgSrc='reference-2.0.png' />
+
+                <ArrowButtons right left urlRight={'/learn-more/patients/John/VazkepaReduced'} />
+                <Footer imgSrc='reference-5.3.2.1.png' />
             </div>
 
 
