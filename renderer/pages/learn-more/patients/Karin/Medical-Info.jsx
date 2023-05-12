@@ -128,7 +128,7 @@ export default function KarinMedicalInfo() {
 
                 <ArrowButtons right left urlRight={'/learn-more/patients/Karin/VazkepaReduced'} />
 
-                <Footer imgSrc='reference-5..png' />
+                <Footer imgSrc='reference-5.2.2.1.png' />
             </div>
 
 
