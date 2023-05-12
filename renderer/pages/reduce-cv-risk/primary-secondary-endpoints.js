@@ -49,10 +49,10 @@ export default function PrimarySecondaryEndpoints() {
                     </span>{' '}
                     IN HIGH AND VERY HIGH CV RISK PATIENTS<sup>1,2</sup>
                 </h1>
-                <h2>
+                {/* <h2>
                     The risk of the primary composite endpoint was significantly
                     reduced by 4.8% ARR<sup>1,2</sup>
-                </h2>
+                </h2> */}
                 <div
                     className={styles.primarySecondaryGrid}
                     id='primarySecondaryGrid'

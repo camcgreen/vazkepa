@@ -29,7 +29,7 @@ export default function VazkepaReduced() {
                         link: '/learn-more/patients/Karin/Medical-Info',
                     },
                     {
-                        title: 'SUBGROUP PRIOR PCI',
+                        title: 'SUBGROUP PRIOR MI',
                         link: '/learn-more/patients/Karin/VazkepaReduced',
                     },
                 ]}
@@ -46,8 +46,8 @@ export default function VazkepaReduced() {
 
 
 
-                <div className={`${styles.mainComponentVazkRedu}`} >
-                    <div className={styles.graph}>
+                {/* <div className={`${styles.mainComponentVazkRedu}`} style={{display: 'flex'}} > */}
+                    {/* <div className={styles.graph}>
                         <h2>Primary endpoint<sup style={{ fontSize: '15px', position: 'relative', top: '-1px' }}>1*,†</sup></h2>
                         <p>5-point MACE: a composite of CV death, nonfatal MI, nonfatal stroke, coronary revascularisation, or unstable angina requiring hospitalisation
                         </p>
@@ -64,13 +64,17 @@ export default function VazkepaReduced() {
                             </table>
                         </span>
 
+                    </div> */}
+                    <div style={{display: 'flex', alignSelf: 'center', marginBottom: 80}}>
+                        <img src="/images/karin-reduced-1.png" alt="" style={{width: 583}} />
+                        <img src="/images/karin-reduced-2.png" alt="" style={{width: 220}} />
                     </div>
-                    <div className={styles.arrow}>
+                    {/* <div className={styles.arrow} style={{transform: 'translateY(20px)'}}>
                         <img src="\images\learn-more\Karin\Karin_Reduced_Arrow.jpg" alt="" />
-                    </div>
-                </div>
+                    </div> */}
+                {/* </div> */}
                 <div className={styles.bottomReducedRisk} >
-                    <button
+                    {/* <button
                         onClick={() => {
                             setShowPopup(true);
                             setPopupIndex(0);
@@ -85,16 +89,34 @@ export default function VazkepaReduced() {
                     }}>
                         Safety in ACS subgroup
                         <img src="\images\Pop_up_button.png" alt="" />
-                    </button>
+                    </button> */}
+                    <img src="/images/karin-reduced-3.png" alt="" onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(0);
+                        }}
+                        style={{width: 183, marginRight: 40}}
+                    />
+                    <img src="/images/karin-reduced-4.png" alt="" onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(1);
+                        }}
+                        style={{width: 330, marginRight: 40}}
+                    />
+                    <img src="/images/karin-reduced-5.png" alt="" onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(2);
+                        }}
+                        style={{width: 236}}
+                    />
                 </div>
-                <p style={{ position: 'relative', top: '3vh', left: '2.5vw', fontSize: '0.8rem', }}>
-                    * REDUCE-IT was not powered for subgroup analyses.<br />† Time-to-event analysis. The incidence (N%) of primary events was 17.2% in the icosapent ethyl arm vs 22% in the placebo arm, over a median of 4.9 years.1
+                <p style={{ position: 'relative', top: '9vh', left: '2.5vw', fontSize: '0.8rem', }}>
+                    * REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.2% in VAZKEPA arm vs 26.1% in the placebo arm over a median follow up period of 4.8 years.<sup style={{fontSize: '0.75rem'}}>1</sup>
                 </p>
 
                 <ArrowButtons left />
 
                 <Footer imgSrc='reference-5.2.3.3.png'
-                    popupImgSrc={['/images/reference-5.2.3.1.png', '/images/reference-5.2.3.2.png']}
+                    popupImgSrc={['/images/karin-reduced-popup-1.png', '/images/karin-reduced-popup-2.png', '/images/karin-reduced-popup-3.png']}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}
                     popupIndex={popupIndex}

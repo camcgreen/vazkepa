@@ -42,7 +42,12 @@ export default function Guidelines() {
                 <div className={styles.cardsGuidelines}>
                     <ButtonCard
                         buttonRefId={1}
-                        frontText='ESC/EAS GUIDELINES FOR THE MANAGEMENT OF DYSLIPIDAEMIAS 20193'
+                        frontText={
+                            <p>
+                                ESC/EAS GUIDELINES FOR THE MANAGEMENT OF
+                                DYSLIPIDAEMIAS 2019<sup>3</sup>
+                            </p>
+                        }
                         backText={
                             <ul
                                 styles={{
@@ -68,7 +73,12 @@ export default function Guidelines() {
                     />
                     <ButtonCard
                         buttonRefId={2}
-                        frontText='ESC GUIDELINES CARDIOVASCULAR DISEASE PREVENTION IN CLINICAL PRACTICE 20212'
+                        frontText={
+                            <p>
+                                ESC GUIDELINES CARDIOVASCULAR DISEASE PREVENTION
+                                IN CLINICAL PRACTICE 2021<sup>2</sup>
+                            </p>
+                        }
                         backText={
                             <ul
                                 styles={{

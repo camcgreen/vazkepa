@@ -23,7 +23,7 @@ export default function index() {
                         link: '/learn-more/patients/David/Medical-Info',
                     },
                     {
-                        title: 'SUBGROUP PRIOR PCI',
+                        title: 'SUBGROUP RECENT ACS',
                         link: '/learn-more/patients/David/VazkepaReduced',
                     },
                 ]}
@@ -58,6 +58,8 @@ export default function index() {
                         </div>
 
                     </div>
+
+                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patient</p>
 
                 </div>
 

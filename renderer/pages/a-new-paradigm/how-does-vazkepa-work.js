@@ -58,15 +58,26 @@ export default function How() {
                     alt=''
                     onClick={() => router.push('/a-new-paradigm/guidelines')}
                 />
-                <img
-                    src='/images/how-does-vazkepa-work-2.png'
-                    alt=''
-                    className={styles.buttonHow}
-                    onClick={() => {
-                        setShowPopup(true);
-                        setPopupIndex(0);
-                    }}
-                />
+                <div className={styles.howButtons}>
+                    <img
+                        src='/images/how-does-vazkepa-work-3.png'
+                        alt=''
+                        // className={styles.buttonHow}
+                        onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(0);
+                        }}
+                    />
+                    <img
+                        src='/images/how-does-vazkepa-work-2.png'
+                        alt=''
+                        // className={styles.buttonHow}
+                        onClick={() => {
+                            setShowPopup(true);
+                            setPopupIndex(1);
+                        }}
+                    />
+                </div>
                 <p className={styles.howNote}>
                     *VAZKEPA (icosapent ethyl) is a new active substance
                     compared to mixtures of omega-3 fatty acids previously
@@ -74,7 +85,10 @@ export default function How() {
                 </p>
                 <Footer
                     imgSrc='reference-3.1.png'
-                    popupImgSrc={['/images/how-does-vazkepa-work-popup-1.png']}
+                    popupImgSrc={[
+                        '/images/how-does-vazkepa-work-popup-1.png',
+                        '/images/how-does-vazkepa-work-popup-2.png',
+                    ]}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}
                     popupIndex={popupIndex}

@@ -52,12 +52,12 @@ export default function secondaryEndpoints() {
                     THE RISK OF OTHER SECONDARY ENDPOINTS, INCLUDING A 20% RRR
                     IN CV DEATH<sup>*1,2</sup>
                 </h1>
-                <h2>
+                {/* <h2>
                     In the prespecified endpoints, the rates of ischemic events
                     were significantly lower in the VAZKEPA group than in the
                     placebo group, including the rate of CV death (4.3% vs.
                     5.2%; HR, 0.80; 95% CI, 0.66–0.98; p=0.03)<sup>1,2 </sup>
-                </h2>
+                </h2> */}
                 <img
                     className={styles.secondaryHeader}
                     src='/images/secondary-endpoints-1.png'

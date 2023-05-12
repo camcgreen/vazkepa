@@ -9,20 +9,16 @@ export default function App({ Component, pageProps }) {
     const router = useRouter();
 
     useEffect(() => {
-
         //PRESS M TO BE REDIRECTED TO MAIN PAGE
-        document.addEventListener("keydown", keyDownTextField, false);
+        document.addEventListener('keydown', keyDownTextField, false);
 
         function keyDownTextField(e) {
             var keyCode = e.keyCode;
             if (keyCode == 77) {
-                Router.push('/learn-more')
+                Router.push('/learn-more');
             }
         }
-
-    }, [])
-
-
+    }, []);
 
     return (
         <>

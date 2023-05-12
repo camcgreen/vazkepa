@@ -3,7 +3,8 @@ import { useIdleTimer } from 'react-idle-timer'
 import styles from '../styles/ScreenSaver.module.css'
 import Router from "next/router"
 
-const timeout = 6000;
+// const timeout = 6000;
+const timeout = 30000;
 const timeoutPushDelay = 5000;
 const pushToPage = '/'
 
@@ -75,7 +76,7 @@ const IdleTimerComponent = () => {
 
     const handleOnIdle = () => {
 
-        console.log("is idle from component")
+        // console.log("is idle from component")
         setIsIdle(true)
 
         returnTimeout = setTimeout(() => {

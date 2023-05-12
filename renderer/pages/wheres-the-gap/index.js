@@ -16,7 +16,7 @@ export default function Home() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'WHERE IS THE GAP?',
+                        title: 'CV RISK MANAGEMENT:\n IS THERE A GAP?',
                         link: '/wheres-the-gap',
                     },
                     {

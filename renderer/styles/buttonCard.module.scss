@@ -16,6 +16,15 @@
 
 }
 
+.flip__card p {
+    font-size: 1rem;
+    max-width: 90%;
+}
+
+.flip__card p sup {
+    font-size: 0.75rem;
+}
+
 .flip__card__inner {
     position: relative;
     width: 303px;
@@ -35,7 +44,6 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-
 
 }
 

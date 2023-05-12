@@ -26,7 +26,7 @@ export default function KarinMedicalInfo() {
                         link: '/learn-more/patients/Karin/Medical-Info',
                     },
                     {
-                        title: 'SUBGROUP PRIOR PCI',
+                        title: 'SUBGROUP PRIOR MI',
                         link: '/learn-more/patients/Karin/VazkepaReduced',
                     },
                 ]}
@@ -82,7 +82,7 @@ export default function KarinMedicalInfo() {
 
                     </div>
 
-                    <div className={styles.infoCards}>
+                    {/* <div className={styles.infoCards}>
 
                         <ButtonCard
                             buttonRefId={1}
@@ -122,7 +122,11 @@ export default function KarinMedicalInfo() {
                         />
 
 
-                    </div>
+                    </div> */}
+
+                    <img src="/images/karin-medical-info-1.png" alt="" style={{width: 819, transform: 'translateY(-40px)'}} />
+
+                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patient</p>
                 </div>
 
 

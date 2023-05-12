@@ -26,7 +26,7 @@ export default function DavidMedicalInfo() {
                         link: '/learn-more/patients/David/Medical-Info',
                     },
                     {
-                        title: 'SUBGROUP PRIOR PCI',
+                        title: 'SUBGROUP RECENT ACS',
                         link: '/learn-more/patients/David/VazkepaReduced',
                     },
                 ]}
@@ -48,7 +48,7 @@ export default function DavidMedicalInfo() {
 
 
                     <div className={`${styles.profiles} ${styles.singleCard} ${styles.topCardContainer}`} style={{ alignItems: 'flex-start', height: '80vh' }}>
-                        <div className={styles.topCard}>
+                        {/* <div className={styles.topCard}>
                             <div>
                                 <span>
                                     Suffered a MI one year ago
@@ -67,7 +67,8 @@ export default function DavidMedicalInfo() {
                                 </span>
                                 <img src='/images/DownArrow.png' />
                             </div>
-                        </div>
+                        </div> */}
+                        <img src="/images/david-medical-info-1.png" alt="" style={{width: 378, marginRight: 40}} />
                         <div className={styles.text}>
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
                                 Since his event six months ago, David has been on standard medical therapy, including statins.                            </span>
@@ -81,7 +82,9 @@ export default function DavidMedicalInfo() {
 
                     </div>
 
-                    <div className={styles.infoCards}>
+                    <img src="/images/david-medical-info-2.png" alt="" style={{width: 819}} />
+
+                    {/* <div className={styles.infoCards}>
 
                         <ButtonCard
                             buttonRefId={1}
@@ -121,7 +124,7 @@ export default function DavidMedicalInfo() {
                         />
 
 
-                    </div>
+                    </div> */}
                 </div>
 
 

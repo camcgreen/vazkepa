@@ -61,6 +61,15 @@ export default function Safety() {
                     alt=''
                 />
                 <img
+                    src='/images/safety-4.png'
+                    alt=''
+                    className={styles.safety4}
+                    onClick={() => {
+                        setShowPopup(true);
+                        setPopupIndex(0);
+                    }}
+                />
+                <img
                     className='prev'
                     src='/images/prev.svg'
                     alt=''
@@ -70,7 +79,7 @@ export default function Safety() {
                 />
                 <Footer
                     imgSrc='reference-4.4.png'
-                    popupImgSrc={['/images/study-design-popup-1.png']}
+                    popupImgSrc={['/images/safety-popup-1.png']}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}
                     popupIndex={popupIndex}

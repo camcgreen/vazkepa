@@ -45,11 +45,11 @@ export default function PrimaryEndpoint() {
                     </span>{' '}
                     IN HIGH AND VERY HIGH CV RISK PATIENTS<sup>1,2</sup>
                 </h1>
-                <h2>
+                {/* <h2>
                     The risk of the primary composite endpoint was significantly
                     reduced by 4.8% ARR, corresponding to a NNT of 21 over a
                     median of 4.9 years<sup>1,2</sup>
-                </h2>
+                </h2> */}
                 <img
                     src='/images/primary-endpoint-1.png'
                     alt=''

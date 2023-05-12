@@ -29,7 +29,7 @@ export default function VazkepaReduced() {
                         link: '/learn-more/patients/David/Medical-Info',
                     },
                     {
-                        title: 'SUBGROUP PRIOR PCI',
+                        title: 'SUBGROUP RECENT ACS',
                         link: '/learn-more/patients/David/VazkepaReduced',
                     },
                 ]}
@@ -39,14 +39,14 @@ export default function VazkepaReduced() {
             <div className={` content`} style={{ height: '80%' }}>
                 <h1>
 
-                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR CABG<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1</sup></span>
+                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>RECENT ACS<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1</sup></span>
 
                 </h1>
-                <h2 style={{ fontWeight: 500 }}>Post hoc analysis of REDUCE-IT in patients with prior CABG<sup style={{ fontSize: '15px', position: 'relative', top: '-5px' }}>1</sup></h2>
+                <h2 style={{ fontWeight: 500 }}>Post hoc analysis of REDUCE-IT in patients with recent ACS<sup style={{ fontSize: '15px', position: 'relative', top: '-5px' }}>1</sup></h2>
 
 
 
-                <div className={`${styles.mainComponentVazkRedu}`} >
+                {/* <div className={`${styles.mainComponentVazkRedu}`} >
                     <div className={styles.graph}>
                         <h2>Primary endpoint<sup style={{ fontSize: '15px', position: 'relative', top: '-1px' }}>1*,†</sup></h2>
                         <p>5-point MACE: a composite of CV death, nonfatal MI, nonfatal stroke, coronary revascularisation, or unstable angina requiring hospitalisation
@@ -68,9 +68,13 @@ export default function VazkepaReduced() {
                     <div className={styles.arrow}>
                         <img src="\images\learn-more\David\David_Reduced_Arrow.jpg" alt="" />
                     </div>
+                </div> */}
+                <div style={{display: 'flex'}}>
+                <img src="/images/david-reduced-1.png" alt="" style={{width: 708, marginLeft: 40, marginRight: 80}} />
+                <img src="/images/david-reduced-2.png" alt="" style={{width: 176}} />
                 </div>
-                <div className={styles.bottomReducedRisk} >
-                    <button
+                <div className={styles.bottomReducedRisk} style={{marginTop: 40}}>
+                    {/* <button
                         onClick={() => {
                             setShowPopup(true);
                             setPopupIndex(0);
@@ -85,16 +89,26 @@ export default function VazkepaReduced() {
                     }}>
                         Safety in ACS subgroup
                         <img src="\images\Pop_up_button.png" alt="" />
-                    </button>
+                    </button> */}
+                    <img src="/images/david-reduced-4.png" alt="" onClick={() => {
+                        setShowPopup(true);
+                        setPopupIndex(0)}}
+                        style={{width: 287, marginRight: 40}}
+                    />
+                    <img src="/images/david-reduced-3.png" alt="" onClick={() => {
+                        setShowPopup(true);
+                        setPopupIndex(1)}}
+                        style={{width: 235}}
+                    />
                 </div>
-                <p style={{ position: 'relative', top: '3vh', left: '2.5vw', fontSize: '0.8rem', }}>
-                    * REDUCE-IT was not powered for subgroup analyses.<br />† Time-to-event analysis. The incidence (N%) of primary events was 17.2% in the icosapent ethyl arm vs 22% in the placebo arm, over a median of 4.9 years.1
+                <p style={{ position: 'relative', top: '12vh', left: '2.5vw', fontSize: '0.8rem', }}>
+                    VAZKEPA reduced risk total primary endpoint events by 36% (RR 0.64; 95% CI 0.45-0.90, p=0.01).
                 </p>
 
                 <ArrowButtons left />
 
                 <Footer imgSrc='reference-5.1.3.3.png'
-                    popupImgSrc={['/images/reference-5.1.3.1.png', '/images/reference-5.1.3.2.png']}
+                    popupImgSrc={['/images/david-reduced-popup-1.png', '/images/david-reduced-popup-2.png']}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}
                     popupIndex={popupIndex}

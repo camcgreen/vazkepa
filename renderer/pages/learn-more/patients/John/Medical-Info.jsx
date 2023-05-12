@@ -83,7 +83,7 @@ export default function JohnMedicalInfo() {
 
                     </div>
 
-                    <div className={styles.infoCards}>
+                    {/* <div className={styles.infoCards}>
 
                         <ButtonCard
                             buttonRefId={1}
@@ -123,7 +123,8 @@ export default function JohnMedicalInfo() {
                         />
 
 
-                    </div>
+                    </div> */}
+                    <img src="/images/john-medical-info-1.png" alt="" style={{width: 819}} />
                 </div>
 
 

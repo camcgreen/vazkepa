@@ -75,6 +75,8 @@ export default function Home() {
                         </div>
                     </div>
 
+                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patients</p>
+
                 </div>
 
                 <Footer imgSrc='reference-5.0.1.png' />
