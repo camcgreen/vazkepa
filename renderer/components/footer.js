@@ -3,6 +3,8 @@ import Prescribing from './prescribing';
 import References from './references';
 import Popup from './popup';
 import styles from '../styles/Footer.module.css';
+import { useRouter } from 'next/router';
+
 
 const Footer = ({
     imgSrc,
@@ -11,6 +13,10 @@ const Footer = ({
     setShowPopup,
     popupIndex,
 }) => {
+
+    const router = useRouter();
+
+
     const [showPrescribingPopup, setShowPrescribingPopup] = useState(false);
     const [showReferencesPopup, setShowReferencesPopup] = useState(false);
     useEffect(() => {
@@ -45,6 +51,19 @@ const Footer = ({
             }
         }
     }, [showPopup]);
+
+
+    const isMedicalInfoPage = () => {
+        const string = router.pathname;
+        const parts = string.split('/'); // Split the string by '/'
+        const lastPart = parts[parts.length - 1]; // Get the last part of the split string
+
+        const result = lastPart == 'David' || lastPart == 'Karin' || lastPart == 'John' ? true : false;
+        console.log(string)
+
+        console.log(result)
+        return result;
+    }
     return (
         <>
             <footer className={styles.footer}>
@@ -52,16 +71,26 @@ const Footer = ({
                     <p>VAZKEPA ist in Deutschland nicht erhältlich</p>
                 </div>
                 <div className={styles.right}>
-                    <div
-                        className={styles.button}
-                        onClick={() =>
+                    {isMedicalInfoPage() == true ?
 
-                            setShowReferencesPopup(!showReferencesPopup)
-                        }
-                    >
-                        <img src='/images/references.svg' alt='' />
-                        <p>REFERENCES</p>
-                    </div>
+                        <div
+                            className={styles.button}
+                        >
+                            <img src='/images/references.svg' alt='' />
+                            <p style={{ opacity: '0.5' }}>REFERENCES</p>
+                        </div>
+
+                        :
+                        <div
+                            className={styles.button}
+                            onClick={() =>
+
+                                setShowReferencesPopup(!showReferencesPopup)
+                            }
+                        >
+                            <img src='/images/references.svg' alt='' />
+                            <p>REFERENCES</p>
+                        </div>}
                     <div className={styles.line} />
                     <div
                         className={styles.button}

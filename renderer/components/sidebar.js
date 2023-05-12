@@ -37,6 +37,14 @@ const Sidebar = ({ navItems }) => {
             navLinks[4].style.top = '80%';
         }
     }, []);
+
+    const isBackButton = (string) => {
+        /*         const parts = string.split('/'); // Split the string by '/'
+                const lastPart = parts[parts.length - 1]; // Get the last part of the split string
+         */
+        return string == 'BACK TO PATIENTS' ? true : false;
+    }
+
     return (
         <>
             <nav className={styles.sidebar}>
@@ -50,21 +58,30 @@ const Sidebar = ({ navItems }) => {
                         <li
                             className='navLi'
                             onClick={() => router.push(item.link)}
-                            // style={{
-                            //     transform:
-                            //         router.pathname === item.link
-                            //             ? 'translateX(0)'
-                            //             : 'translateX(0)',
-                            // }}
+                        // style={{
+                        //     transform:
+                        //         router.pathname === item.link
+                        //             ? 'translateX(0)'
+                        //             : 'translateX(0)',
+                        // }}
                         >
-                            <img
-                                src={
-                                    router.pathname === item.link
-                                        ? '/images/hotspot-filled.svg'
-                                        : '/images/hotspot.svg'
-                                }
-                                alt=''
-                            />
+                            {isBackButton(item.title) == true ?
+                                <img
+                                    style={{ width: '50px' }}
+                                    src={
+                                        '/images/back.png'
+                                    }
+                                    alt=''
+                                /> :
+                                <img
+                                    src={
+                                        router.pathname === item.link
+                                            ? '/images/hotspot-filled.svg'
+                                            : '/images/hotspot.svg'
+                                    }
+                                    alt=''
+                                />}
+
                             <a
                                 className='navLiLink'
                                 style={{
