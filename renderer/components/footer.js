@@ -59,9 +59,6 @@ const Footer = ({
         const lastPart = parts[parts.length - 1]; // Get the last part of the split string
 
         const result = lastPart == 'David' || lastPart == 'Karin' || lastPart == 'John' ? true : false;
-        console.log(string)
-
-        console.log(result)
         return result;
     }
     return (
