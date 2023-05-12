@@ -93,7 +93,7 @@ export default function VazkepaReduced() {
 
                 <ArrowButtons left />
 
-                <Footer imgSrc='reference-5.1.3.3..png'
+                <Footer imgSrc='reference-5.1.3.3.png'
                     popupImgSrc={['/images/reference-5.1.3.1.png', '/images/reference-5.1.3.2.png']}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}
