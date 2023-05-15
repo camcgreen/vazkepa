@@ -39,15 +39,15 @@ export default function VazkepaReduced() {
             <div className={` content`} style={{ height: '80%' }}>
                 <h1>
 
-                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS<br />IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR MI<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1,2</sup></span>
+                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS<br />IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR MI<sup style={{ fontSize: '15px', position: 'relative', top: '-2px' }}>1,2</sup></span>
 
                 </h1>
-                <h2 style={{ fontWeight: 500 }}>Prespecified and post hoc analysis of REDUCE-IT in patients with prior MI<sup style={{ fontSize: '15px', position: 'relative', top: '-5px' }}>1,2*</sup></h2>
+                <h2 style={{ fontWeight: 500, position: 'relative', top: '4vh' }}>Prespecified and post hoc analysis of REDUCE-IT in patients with prior MI<sup style={{ fontSize: '10px', position: 'relative', top: '-1px' }}>1,2*</sup></h2>
 
 
 
                 {/* <div className={`${styles.mainComponentVazkRedu}`} style={{display: 'flex'}} > */}
-                    {/* <div className={styles.graph}>
+                {/* <div className={styles.graph}>
                         <h2>Primary endpoint<sup style={{ fontSize: '15px', position: 'relative', top: '-1px' }}>1*,†</sup></h2>
                         <p>5-point MACE: a composite of CV death, nonfatal MI, nonfatal stroke, coronary revascularisation, or unstable angina requiring hospitalisation
                         </p>
@@ -65,11 +65,11 @@ export default function VazkepaReduced() {
                         </span>
 
                     </div> */}
-                    <div style={{display: 'flex', alignSelf: 'center', marginBottom: 80}}>
-                        <img src="/images/karin-reduced-1.png" alt="" style={{width: 583}} />
-                        <img src="/images/karin-reduced-2.png" alt="" style={{width: 220}} />
-                    </div>
-                    {/* <div className={styles.arrow} style={{transform: 'translateY(20px)'}}>
+                <div style={{ display: 'flex', alignSelf: 'center', marginBottom: 80, position: 'relative', top: '4vh' }}>
+                    <img src="/images/karin-reduced-1.png" alt="" style={{ width: 583 }} />
+                    <img src="/images/karin-reduced-2.png" alt="" style={{ width: 220 }} />
+                </div>
+                {/* <div className={styles.arrow} style={{transform: 'translateY(20px)'}}>
                         <img src="\images\learn-more\Karin\Karin_Reduced_Arrow.jpg" alt="" />
                     </div> */}
                 {/* </div> */}
@@ -91,31 +91,31 @@ export default function VazkepaReduced() {
                         <img src="\images\Pop_up_button.png" alt="" />
                     </button> */}
                     <img src="/images/karin-reduced-3.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(0);
-                        }}
-                        style={{width: 183, marginRight: 40}}
+                        setShowPopup(true);
+                        setPopupIndex(0);
+                    }}
+                        style={{ width: 183, marginRight: 40 }}
                     />
                     <img src="/images/karin-reduced-4.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(1);
-                        }}
-                        style={{width: 330, marginRight: 40}}
+                        setShowPopup(true);
+                        setPopupIndex(1);
+                    }}
+                        style={{ width: 330, marginRight: 40 }}
                     />
                     <img src="/images/karin-reduced-5.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(2);
-                        }}
-                        style={{width: 236}}
+                        setShowPopup(true);
+                        setPopupIndex(2);
+                    }}
+                        style={{ width: 236 }}
                     />
                 </div>
                 <p style={{ position: 'relative', top: '9vh', left: '2.5vw', fontSize: '0.8rem', }}>
-                    * REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.2% in VAZKEPA arm vs 26.1% in the placebo arm over a median follow up period of 4.8 years.<sup style={{fontSize: '0.75rem'}}>1</sup>
+                    * REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.2% in VAZKEPA arm vs 26.1% in the placebo arm over a median<br /> follow up period of 4.8 years.<sup style={{ fontSize: '0.75rem' }}>1</sup>
                 </p>
 
                 <ArrowButtons left />
 
-                <Footer imgSrc='reference-5.2.3.3.png'
+                <Footer imgSrc='reference-5.2.3.4.png'
                     popupImgSrc={['/images/karin-reduced-popup-1.png', '/images/karin-reduced-popup-2.png', '/images/karin-reduced-popup-3.png']}
                     showPopup={showPopup}
                     setShowPopup={setShowPopup}

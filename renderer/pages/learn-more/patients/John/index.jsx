@@ -37,18 +37,18 @@ export default function index() {
 
                 </h1>
 
-                <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`}>
+                <div style={{ position: 'relative', top: '-5vh' }} className={`${styles.gap1Content} ${styles.gap1ContentMOD}`}>
 
 
                     <div className={`${styles.profiles} ${styles.singleCard}`}>
                         <div>
-                            <img src='/images/learn-more/John/John.png' alt='' />
+                            <img style={{ position: 'relative', top: '-0vh', left: '2.2vw', width: '23vw' }} src='/images/learn-more/John/John.png' alt='' />
 
                         </div>
                         <div>
 
 
-                            <span style={{ paddingTop: '80px', fontSize: '2rem' }}>
+                            <span style={{ position: 'relative', top: '-1vh', paddingTop: '80px', fontSize: '2rem' }}>
                                 John is 72 years old and<br />used to work in a bank,<br />he lives alone in the city.
 
                                 {/*                             </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>

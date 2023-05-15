@@ -16,7 +16,7 @@ export default function Home() {
         // <div className={styles.wrapper}>
         // <Sidebar />
 
-        <div>
+        <div className={styles.sectionFive}>
 
             <Sidebar
                 navItems={[
@@ -42,7 +42,8 @@ export default function Home() {
 
             <div className={`${styles.content} content`} >
                 <h1>
-                    WHICH PATIENT WOULD YOU LIKE TO<br />
+                    WHICH PATIENT WOULD YOU LIKE<br />
+                    TO
                     <span className='blue'> LEARN MORE </span>
                     ABOUT?
 
@@ -75,7 +76,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patients</p>
+                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patients</p>
 
                 </div>
 

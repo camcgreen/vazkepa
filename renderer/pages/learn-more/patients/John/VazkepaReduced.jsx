@@ -39,10 +39,10 @@ export default function VazkepaReduced() {
             <div className={` content`} style={{ height: '80%' }}>
                 <h1>
 
-                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR PCI<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1</sup></span>
+                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS<br />IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR PCI<sup style={{ fontSize: '15px', position: 'relative', top: '-2px' }}>1</sup></span>
 
                 </h1>
-                <h2 style={{ fontWeight: 500 }}>Post hoc analysis of REDUCE-IT in patients with prior PCI<sup style={{ fontSize: '15px', position: 'relative', top: '-5px' }}>1</sup></h2>
+                <h2 style={{ fontWeight: 500, position: 'relative', top: '4vh' }}>Post hoc analysis of REDUCE-IT in patients with prior PCI<sup style={{ fontSize: '10px', position: 'relative', top: '-1px' }}>1</sup></h2>
 
 
 
@@ -69,11 +69,11 @@ export default function VazkepaReduced() {
                         <img src="\images\learn-more\John\John_Reduced_Arrow.jpg" alt="" />
                     </div>
                 </div> */}
-                    <div style={{display: 'flex', alignSelf: 'center', marginBottom: 80}}>
-                        <img src="/images/john-reduced-1.png" alt="" style={{width: 583}} />
-                        <img src="/images/john-reduced-2.png" alt="" style={{width: 220}} />
-                    </div>
-                    <div className={styles.bottomReducedRisk} >
+                <div style={{ display: 'flex', alignSelf: 'center', marginBottom: 80, position: 'relative', top: '4vh' }}>
+                    <img src="/images/john-reduced-1.png" alt="" style={{ width: 583 }} />
+                    <img src="/images/john-reduced-2.png" alt="" style={{ width: 220 }} />
+                </div>
+                <div className={styles.bottomReducedRisk} >
                     {/* <button
                         onClick={() => {
                             setShowPopup(true);
@@ -91,27 +91,26 @@ export default function VazkepaReduced() {
                         <img src="\images\Pop_up_button.png" alt="" />
                     </button> */}
                     <img src="/images/john-reduced-3.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(0);
-                        }}
-                        style={{width: 180, marginRight: 40}}
+                        setShowPopup(true);
+                        setPopupIndex(0);
+                    }}
+                        style={{ width: 180, marginRight: 40 }}
                     />
                     <img src="/images/john-reduced-4.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(1);
-                        }}
-                        style={{width: 281, marginRight: 40}}
+                        setShowPopup(true);
+                        setPopupIndex(1);
+                    }}
+                        style={{ width: 281, marginRight: 40 }}
                     />
                     <img src="/images/john-reduced-5.png" alt="" onClick={() => {
-                            setShowPopup(true);
-                            setPopupIndex(2);
-                        }}
-                        style={{width: 236}}
+                        setShowPopup(true);
+                        setPopupIndex(2);
+                    }}
+                        style={{ width: 236 }}
                     />
                 </div>
                 <p style={{ position: 'relative', top: '10vh', left: '2.5vw', fontSize: '0.8rem', }}>
-                    * REDUCE-IT was not powered for subgroup analyses.<br />† Time-to-event analysis. The incidence (N%) of primary events was 17.2% in the icosapent ethyl arm vs 22% in the placebo arm, over a median of 4.9 years.1
-                </p>
+                    *REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.8% in VAZKEPA arm vs 29.4% in the placebo arm over a median<br />follow up period of 4.8 years.1                </p>
 
                 <ArrowButtons left />
 

@@ -37,18 +37,18 @@ export default function index() {
 
                 </h1>
 
-                <div className={`${styles.gap1Content} ${styles.gap1ContentMOD}`}>
+                <div style={{ position: 'relative', top: '-5vh' }} className={`${styles.gap1Content} ${styles.gap1ContentMOD}`}>
 
 
                     <div className={`${styles.profiles} ${styles.singleCard}`}>
                         <div>
-                            <img src='/images/learn-more/David/David.png' alt='' />
+                            <img style={{ position: 'relative', top: '-5vh', left: '2.2vw', width: '23vw' }} src='/images/learn-more/David/David.png' alt='' />
 
                         </div>
                         <div>
 
 
-                            <span style={{ paddingTop: '80px', fontSize: '2rem' }}>
+                            <span style={{ position: 'relative', top: '-3vh', paddingTop: '80px', fontSize: '2rem' }}>
                                 David is a 63 year old<br />retired landscape gardener<br />who lives at home with his <br />wife, Marianna.
                                 {/*                             </span><span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 He enjoys growing fruit and vegetables in his allotment, going on long hikes and spending time with his three grandchildren. At weekends he plays the ukulele in a band.
@@ -59,15 +59,15 @@ export default function index() {
 
                     </div>
 
-                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patient</p>
+                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patient</p>
 
                 </div>
 
                 <Footer imgSrc='reference-2.0.png' />
-            </div>
+            </div >
 
             <ArrowButtons right urlRight={'/learn-more/patients/David/Medical-Info'} />
 
-        </div>
+        </div >
     )
 }
