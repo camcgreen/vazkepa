@@ -26,12 +26,21 @@ export default function App({ Component, pageProps }) {
                 <title>BOILERPLATE</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            {/*             <IdleTimerComponent />
- */}            <img
+            {/* <IdleTimerComponent /> */}
+            {/* <img
                 src='/images/v.png'
                 alt=''
                 className='v'
                 style={{ display: router.pathname === '/' ? 'none' : 'block' }}
+            /> */}
+            <img
+                src='/images/bg.png'
+                alt=''
+                className='bg'
+                style={{
+                    display: router.pathname === '/' ? 'none' : 'block',
+                    // transform: 'scale(0.5)',
+                }}
             />
             <Component {...pageProps} />
         </>

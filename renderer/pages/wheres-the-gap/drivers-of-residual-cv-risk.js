@@ -15,7 +15,12 @@ export default function Drivers() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'CV RISK MANAGEMENT:\n IS THERE A GAP?',
+                        title: (
+                            <>
+                                CV RISK MANAGEMENT:
+                                <br /> IS THERE A GAP?
+                            </>
+                        ),
                         link: '/wheres-the-gap',
                     },
                     {

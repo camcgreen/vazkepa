@@ -37,9 +37,11 @@ export default function How() {
                     CONSIDERED TO HAVE A MULTIFACTORIAL MOA
                     <sup>1-3</sup>
                 </h1>
-                <h2>
+                <h2 style={{ textAlign: 'left', marginLeft: 130 }}>
                     VAZKEPA is the first available EPA-only based omega-3 fatty
-                    acid approved by EMA for CV risk reduction<sup>2,4</sup>
+                    acid approved by EMA
+                    <br />
+                    for CV risk reduction<sup>2,4</sup>
                 </h2>
                 <img
                     src='/images/how-does-vazkepa-work-1.png'
