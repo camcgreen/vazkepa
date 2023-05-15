@@ -8,9 +8,21 @@
     backdrop-filter: blur(10px);
 }
 
+.imgHolder {
+    position: relative;
+    align-self: center;
+}
+
 .img {
     z-index: 4;
     /* width: 920px;
     height: 700px; */
     transform: scale(0.5);
+}
+
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 28px;
 }

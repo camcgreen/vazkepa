@@ -37,7 +37,8 @@ export default function Guidelines() {
                 </h1>
                 <h2>
                     Recommendations for drug treatments of high-risk patients
-                    with hypertriglyceridaemia to reduce CV risk<sup>1,2</sup>
+                    with <br />
+                    hypertriglyceridaemia to reduce CV risk<sup>1,2</sup>
                 </h2>
                 <div className={styles.cardsGuidelines}>
                     <ButtonCard
@@ -56,17 +57,19 @@ export default function Guidelines() {
                                 }}
                             >
                                 <li>
-                                    {
-                                        'Statin treatment is recommended as a first drug of choice for reduce CVD risk in high-risk individuals with hypertriglyceridaemia (TG>2.3mmol/L [>200mg/dL]). Class I, Level B'
-                                    }
+                                    Statin treatment is recommended as a first
+                                    drug of choice for reduce CVD risk in
+                                    high-risk individuals with
+                                    hypertriglyceridaemia (TG&gt;2.3mmol/L
+                                    [&gt;200mg/dL]). Class I, Level B
                                 </li>
                                 <li>
-                                    In high-risk (or above) patients with TG
-                                    between 1.5 and 5.6 mmol/L (135-499mg/dL)*
-                                    despite statin treatment, n-3 PUFAs (
-                                    <span>icosapent ethyl</span> 2 x 2 g/day)
-                                    should be considered in combination with
-                                    statin. Class IIa, Level B
+                                    In <span>high-risk (or above)</span>{' '}
+                                    patients with TG between 1.5 and 5.6 mmol/L
+                                    (135-499mg/dL)* despite statin treatment,
+                                    n-3 PUFAs (<span>icosapent ethyl</span> 2 x
+                                    2 g/day) should be considered in combination
+                                    with statin. Class IIa, Level B
                                 </li>
                             </ul>
                         }
@@ -88,15 +91,22 @@ export default function Guidelines() {
                             >
                                 <li>
                                     {
-                                        'Statin treatment is recommended as the first drug of choice for reducing CVD risk in high-risk individuals with hypertriglyceridaemia (triglycerides >2.3mmol/L [>200 mg/dL]). Class I, Level A'
+                                        <>
+                                            Statin treatment is recommended as
+                                            the first drug of choice for
+                                            reducing CVD risk in high-risk
+                                            individuals with
+                                            hypertriglyceridaemia (triglycerides
+                                            &gt;2.3mmol/L [&gt;200 mg/dL]).
+                                            Class I, Level A
+                                        </>
                                     }
                                 </li>
                                 <li>
-                                    {
-                                        'In high-risk (or above) patients with triglycerides >1.5 mmol/L (>'
-                                    }
-                                    135mg/dL)* despite statin treatment and
-                                    lifestyle measures, n-3 PUFAs (
+                                    In <span>high-risk (or above)</span>{' '}
+                                    patients with triglycerides &gt;1.5 mmol/L
+                                    (&gt; 135mg/dL)* despite statin treatment
+                                    and lifestyle measures, n-3 PUFAs (
                                     <span>icosapent ethyl</span> 2 x 2 g/day)
                                     may be considered in combination with a
                                     statin Class IIb, Level B

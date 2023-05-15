@@ -24,11 +24,21 @@ export default function Study() {
                         link: '/reduce-cv-risk/primary-endpoint',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                PRIMARY & KEY
+                                <br /> SECONDARY ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/primary-secondary-endpoints',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                OTHER SECONDARY <br />
+                                ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/secondary-endpoints',
                     },
                     {
@@ -39,10 +49,10 @@ export default function Study() {
             />
             <div className='content'>
                 <h1>
-                    VAZKEPA’S CV BENEFITS WERE STUDIED IN REDUCE-IT IN HIGH AND
-                    VERY{' '}
+                    VAZKEPA’S CV BENEFITS WERE STUDIED IN REDUCE-IT IN <br />
+                    HIGH AND VERY{' '}
                     <span className='blue'>
-                        HIGH RISK PATIENTS WITH ELEVATED TGs
+                        HIGH RISK PATIENTS WITH ELEVATED TGs <br />
                     </span>{' '}
                     ≥1.7 MMOL/L (≥150 MG/DL)<sup>1,2</sup>
                 </h1>
