@@ -46,14 +46,15 @@ export default function Safety() {
             />
             <div className='content'>
                 <h1>
-                    <span className='blue'>VAZKEPA </span> WAS GENERALLY WELL
-                    TOLERATED OVER 4.9 YEARS<sup>1</sup>
+                    <span className='blue'>VAZKEPA </span> WAS GENERALLY
+                    <br /> WELL TOLERATED OVER 4.9 YEARS<sup>1</sup>
                 </h1>
                 <h2>
                     In the REDUCE-IT study, the overall rates of adverse
-                    reactions, and the rates of serious adverse reactions
-                    leading to discontinuation, were comparable between the
-                    VAZKEPA and placebo groups<sup>1</sup>
+                    reactions, and the rates of serious adverse <br />
+                    reactions leading to discontinuation, were comparable
+                    between the VAZKEPA and placebo groups
+                    <sup>1</sup>
                 </h2>
                 <img
                     className={styles.safety1}
@@ -63,6 +64,7 @@ export default function Safety() {
                 <img
                     className={styles.safety2}
                     src='/images/safety-2.png'
+                    style={{ marginTop: 40, marginBottom: 40 }}
                     alt=''
                 />
                 <img
