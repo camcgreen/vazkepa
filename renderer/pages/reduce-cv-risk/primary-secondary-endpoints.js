@@ -28,11 +28,21 @@ export default function PrimarySecondaryEndpoints() {
                         link: '/reduce-cv-risk/primary-endpoint',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                PRIMARY & KEY
+                                <br /> SECONDARY ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/primary-secondary-endpoints',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                OTHER SECONDARY <br />
+                                ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/secondary-endpoints',
                     },
                     {
@@ -57,10 +67,10 @@ export default function PrimarySecondaryEndpoints() {
                     className={styles.primarySecondaryGrid}
                     id='primarySecondaryGrid'
                 >
-                    <p>
+                    <p style={{ fontWeight: 700 }}>
                         Primary Endpoint 5-Point MACE<sup>*</sup>
                     </p>
-                    <p>
+                    <p style={{ fontWeight: 700 }}>
                         Key Secondary Endpoint 3-Point MACE<sup>†</sup>
                     </p>
                     <img
@@ -129,13 +139,12 @@ export default function PrimarySecondaryEndpoints() {
                         router.push('/reduce-cv-risk/secondary-endpoints')
                     }
                 />
-                <div className={styles.primaryEndpointButtons}>
-                    <img
-                        src='/images/primary-endpoint-3.png'
-                        alt=''
-                        onClick={() => router.push('/learn-more')}
-                    />
-                </div>
+                <img
+                    src='/images/primary-endpoint-3.png'
+                    alt=''
+                    onClick={() => router.push('/learn-more')}
+                    className={styles.primarySecondaryEndpointButton}
+                />
                 <img
                     src='/images/primary-secondary-3.png'
                     alt=''

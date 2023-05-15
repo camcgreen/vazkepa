@@ -76,6 +76,21 @@
         top: -25px;
         // left: 14vw;
         right: 0;
-        width:50px ;
+        width: 50px;
     }
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 73px !important;
+    height: 40px !important;
+    background: #57C0E8;
+    color: white;
+    text-transform: uppercase;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

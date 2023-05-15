@@ -17,7 +17,12 @@ export default function Elevated() {
             <Sidebar
                 navItems={[
                     {
-                        title: 'CV RISK MANAGEMENT:\n IS THERE A GAP?',
+                        title: (
+                            <>
+                                CV RISK MANAGEMENT:
+                                <br /> IS THERE A GAP?
+                            </>
+                        ),
                         link: '/wheres-the-gap',
                     },
                     {
@@ -34,14 +39,20 @@ export default function Elevated() {
                 <h1>
                     <span className='blue'>ON-TREATMENT TG LEVELS</span> Were
                     Associated With CV Risk Independently Of on treatment LDL-C
-                    Levels<sup>1</sup>
+                    Levels
                     <span className='superscript'>
                         <sup>1</sup>
                     </span>
                 </h1>
                 <h2>
                     {
-                        'Post hoc analysis of 3,718 ACS patients from the PROVE-IT TIMI 22 trial who survived event free >30 days: incidence of death, MI or re-hospitalisation for ACS'
+                        <>
+                            Post hoc analysis of 3,718 ACS patients from the
+                            PROVE-IT TIMI 22 trial who survived event
+                            <br />
+                            free &gt;30 days: incidence of death, MI or
+                            re-hospitalisation for ACS
+                        </>
                     }
                     <sup>1</sup>
                 </h2>

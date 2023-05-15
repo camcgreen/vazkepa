@@ -33,11 +33,21 @@ export default function secondaryEndpoints() {
                         link: '/reduce-cv-risk/primary-endpoint',
                     },
                     {
-                        title: 'PRIMARY & KEY\n SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                PRIMARY & KEY
+                                <br /> SECONDARY ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/primary-secondary-endpoints',
                     },
                     {
-                        title: 'SECONDARY ENDPOINTS',
+                        title: (
+                            <>
+                                OTHER SECONDARY <br />
+                                ENDPOINTS
+                            </>
+                        ),
                         link: '/reduce-cv-risk/secondary-endpoints',
                     },
                     {
