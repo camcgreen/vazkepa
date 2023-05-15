@@ -124,7 +124,7 @@ export default function JohnMedicalInfo() {
 
 
                     </div> */}
-                    <img src="/images/john-medical-info-1.png" alt="" style={{ width: 819 }} />
+                    <img src="/images/john-medical-info-1.png" alt="" style={{ width: 819, position: 'relative', top: '-2vh' }} />
                     <p style={{ position: 'fixed', left: 1730, bottom: 100 }}>*Hypothetical patient</p>
 
                 </div>
