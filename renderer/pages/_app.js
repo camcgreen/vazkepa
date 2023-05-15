@@ -26,8 +26,8 @@ export default function App({ Component, pageProps }) {
                 <title>BOILERPLATE</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            <IdleTimerComponent />
-            <img
+            {/*             <IdleTimerComponent />
+ */}            <img
                 src='/images/v.png'
                 alt=''
                 className='v'

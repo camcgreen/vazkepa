@@ -68,10 +68,10 @@ export default function DavidMedicalInfo() {
                                 <img src='/images/DownArrow.png' />
                             </div>
                         </div> */}
-                        <img src="/images/david-medical-info-1.png" alt="" style={{width: 378, marginRight: 40}} />
+                        <img src="/images/david-medical-info-1.png" alt="" style={{ width: 378, marginRight: 40 }} />
                         <div className={styles.text}>
                             <span style={{ paddingTop: '80px', fontWeight: 'inherit' }}>
-                                Since his event six months ago, David has been on standard medical therapy, including statins.                            </span>
+                                Since his event six months ago, David has been on<br /> standard medical therapy, including statins.                            </span>
                             {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
                             </span> */}
@@ -82,7 +82,7 @@ export default function DavidMedicalInfo() {
 
                     </div>
 
-                    <img src="/images/david-medical-info-2.png" alt="" style={{width: 819}} />
+                    <img src="/images/david-medical-info-2.png" alt="" style={{ width: 819, position: 'relative', top: '-5vh' }} />
 
                     {/* <div className={styles.infoCards}>
 
@@ -125,6 +125,8 @@ export default function DavidMedicalInfo() {
 
 
                     </div> */}
+                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patient</p>
+
                 </div>
 
 

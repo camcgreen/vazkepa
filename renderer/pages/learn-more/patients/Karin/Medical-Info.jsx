@@ -124,9 +124,10 @@ export default function KarinMedicalInfo() {
 
                     </div> */}
 
-                    <img src="/images/karin-medical-info-1.png" alt="" style={{width: 819, transform: 'translateY(-40px)'}} />
+                    <img src="/images/karin-medical-info-1.png" alt="" style={{ width: 819, transform: 'translateY(-40px)' }} />
 
-                    <p style={{position: 'fixed', left: 800, bottom: 100}}>*Hypothetical patient</p>
+                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patient</p>
+
                 </div>
 
 

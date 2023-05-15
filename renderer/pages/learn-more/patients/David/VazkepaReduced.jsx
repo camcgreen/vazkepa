@@ -39,10 +39,10 @@ export default function VazkepaReduced() {
             <div className={` content`} style={{ height: '80%' }}>
                 <h1>
 
-                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>RECENT ACS<sup style={{ fontSize: '15px', position: 'relative', top: '-10px' }}>1</sup></span>
+                    <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS IN PATIENTS WITH <span style={{ fontWeight: '500' }}>RECENT ACS<sup style={{ fontSize: '15px', position: 'relative', top: '-2px' }}>1</sup></span>
 
                 </h1>
-                <h2 style={{ fontWeight: 500 }}>Post hoc analysis of REDUCE-IT in patients with recent ACS<sup style={{ fontSize: '15px', position: 'relative', top: '-5px' }}>1</sup></h2>
+                <h2 style={{ fontWeight: 500, position: 'relative', top: '4vh' }}>Post hoc analysis of REDUCE-IT in patients with recent ACS<sup style={{ fontSize: '10px', position: 'relative', top: '-0px' }}>1</sup></h2>
 
 
 
@@ -69,11 +69,11 @@ export default function VazkepaReduced() {
                         <img src="\images\learn-more\David\David_Reduced_Arrow.jpg" alt="" />
                     </div>
                 </div> */}
-                <div style={{display: 'flex'}}>
-                <img src="/images/david-reduced-1.png" alt="" style={{width: 708, marginLeft: 40, marginRight: 80}} />
-                <img src="/images/david-reduced-2.png" alt="" style={{width: 176}} />
+                <div style={{ display: 'flex' }}>
+                    <img src="/images/david-reduced-1.png" alt="" style={{ width: 708, marginLeft: 40, marginRight: 80, position: 'relative', top: '4vh' }} />
+                    <img src="/images/david-reduced-2.png" alt="" style={{ width: 176 }} />
                 </div>
-                <div className={styles.bottomReducedRisk} style={{marginTop: 40}}>
+                <div className={styles.bottomReducedRisk} style={{ marginTop: 40 }}>
                     {/* <button
                         onClick={() => {
                             setShowPopup(true);
@@ -92,13 +92,15 @@ export default function VazkepaReduced() {
                     </button> */}
                     <img src="/images/david-reduced-4.png" alt="" onClick={() => {
                         setShowPopup(true);
-                        setPopupIndex(0)}}
-                        style={{width: 287, marginRight: 40}}
+                        setPopupIndex(0)
+                    }}
+                        style={{ width: 287, marginRight: 40 }}
                     />
                     <img src="/images/david-reduced-3.png" alt="" onClick={() => {
                         setShowPopup(true);
-                        setPopupIndex(1)}}
-                        style={{width: 235}}
+                        setPopupIndex(1)
+                    }}
+                        style={{ width: 235 }}
                     />
                 </div>
                 <p style={{ position: 'relative', top: '12vh', left: '2.5vw', fontSize: '0.8rem', }}>
