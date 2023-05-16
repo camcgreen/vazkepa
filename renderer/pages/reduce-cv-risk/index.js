@@ -45,6 +45,10 @@ export default function Study() {
                         title: 'SAFETY',
                         link: '/reduce-cv-risk/safety',
                     },
+                    {
+                        title: 'CONTRAINDICATIONS',
+                        link: '/reduce-cv-risk/contraindications',
+                    },
                 ]}
             />
             <div className='content'>
@@ -81,7 +85,11 @@ export default function Study() {
                         setPopupIndex(0);
                     }}
                 />
-                <img src='/images/study-design-3.png' alt='' />
+                <img
+                    src='/images/study-design-3.png'
+                    alt=''
+                    style={{ marginLeft: 80 }}
+                />
                 <Footer
                     imgSrc='reference-4.0.png'
                     popupImgSrc={['/images/study-design-popup-1.png']}

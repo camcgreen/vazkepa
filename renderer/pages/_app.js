@@ -8,17 +8,17 @@ import Router from 'next/router';
 export default function App({ Component, pageProps }) {
     const router = useRouter();
 
-    useEffect(() => {
-        //PRESS M TO BE REDIRECTED TO MAIN PAGE
-        document.addEventListener('keydown', keyDownTextField, false);
+    // useEffect(() => {
+    //     //PRESS M TO BE REDIRECTED TO MAIN PAGE
+    //     document.addEventListener('keydown', keyDownTextField, false);
 
-        function keyDownTextField(e) {
-            var keyCode = e.keyCode;
-            if (keyCode == 77) {
-                Router.push('/learn-more');
-            }
-        }
-    }, []);
+    //     function keyDownTextField(e) {
+    //         var keyCode = e.keyCode;
+    //         if (keyCode == 77) {
+    //             Router.push('/learn-more');
+    //         }
+    //     }
+    // }, []);
 
     return (
         <>
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
                 <title>BOILERPLATE</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            {/* <IdleTimerComponent /> */}
+            <IdleTimerComponent />
             {/* <img
                 src='/images/v.png'
                 alt=''

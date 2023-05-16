@@ -54,21 +54,27 @@ export default function Home() {
 
                     <div className={styles.profiles}>
                         <div>
-                            <img src='/images/learn-more/David/David.png' alt='' />
+                            <img src='/images/learn-more/David/David.png' alt='' onClick={() => {
+                                Router.push('/learn-more/patients/David')
+                            }} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/David')
                             }}>MEET DAVID*</button>
                             <span>an ACS patient</span>
                         </div>
                         <div>
-                            <img src='/images/learn-more/Karin/Karin.png' alt='' />
+                            <img src='/images/learn-more/Karin/Karin.png' alt='' onClick={() => {
+                                Router.push('/learn-more/patients/Karin')
+                            }} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/Karin')
                             }}>MEET KARIN*</button>
                             <span>a recent MI patient</span>
                         </div>
                         <div>
-                            <img src='/images/learn-more/John/John.png' alt='' />
+                            <img src='/images/learn-more/John/John.png' alt='' onClick={() => {
+                                Router.push('/learn-more/patients/John')
+                            }} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/John')
                             }}>MEET JOHN*</button>
@@ -76,7 +82,7 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patients</p>
+                    <p style={{ position: 'fixed', left: 835, bottom: 100 }}>*Hypothetical patients</p>
 
                 </div>
 

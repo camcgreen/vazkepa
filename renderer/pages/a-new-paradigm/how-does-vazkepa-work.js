@@ -31,17 +31,17 @@ export default function How() {
             />
             <div className='content'>
                 <h1>
-                    <span className='blue'>
-                        VAZKEPA IS A NEW ACTIVE SUBSTANCE
-                    </span>{' '}
-                    CONSIDERED TO HAVE A MULTIFACTORIAL MOA
+                    <span className='blue'>VAZKEPA</span> IS CONSIDERED
+                    <br /> TO HAVE A MULTIFACTORIAL MOA
                     <sup>1-3</sup>
                 </h1>
-                <h2 style={{ textAlign: 'left', marginLeft: 130 }}>
-                    VAZKEPA is the first available EPA-only based omega-3 fatty
+                <h2 style={{ textAlign: 'left', marginLeft: 107 }}>
+                    {/* VAZKEPA is the first available EPA-only based omega-3 fatty
                     acid approved by EMA
                     <br />
-                    for CV risk reduction<sup>2,4</sup>
+                    for CV risk reduction<sup>2,4</sup> */}
+                    VAZKEPA is the only pure EPA-based omega-3 fatty acid
+                    approved by EMA for CV risk reduction<sup>2,4</sup>
                 </h2>
                 <img
                     src='/images/how-does-vazkepa-work-1.png'
@@ -80,7 +80,7 @@ export default function How() {
                         }}
                     />
                 </div>
-                <p className={styles.howNote}>
+                <p className={styles.howNote} style={{ marginLeft: 80 }}>
                     *VAZKEPA (icosapent ethyl) is a new active substance
                     compared to mixtures of omega-3 fatty acids previously
                     authorised in European Union<sup>2</sup>

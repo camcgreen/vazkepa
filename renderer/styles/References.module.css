@@ -11,6 +11,7 @@
 .imgHolder {
     position: relative;
     align-self: center;
+    display:inline-block
 }
 
 .img {

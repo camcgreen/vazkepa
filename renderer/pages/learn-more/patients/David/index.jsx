@@ -59,7 +59,7 @@ export default function index() {
 
                     </div>
 
-                    <p style={{ position: 'fixed', left: 800, bottom: 100 }}>*Hypothetical patient</p>
+                    <p style={{ position: 'fixed', left: 850, bottom: 100, fontWeight: 300 }}>*Hypothetical patient</p>
 
                 </div>
 

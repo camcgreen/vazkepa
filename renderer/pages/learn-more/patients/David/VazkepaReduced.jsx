@@ -71,7 +71,7 @@ export default function VazkepaReduced() {
                 </div> */}
                 <div style={{ display: 'flex' }}>
                     <img src="/images/david-reduced-1.png" alt="" style={{ width: 708, marginLeft: 40, marginRight: 80, position: 'relative', top: '4vh' }} />
-                    <img src="/images/david-reduced-2.png" alt="" style={{ width: 176 }} />
+                    <img src="/images/david-reduced-2.png" alt="" style={{ width: 200 }} />
                 </div>
                 <div className={styles.bottomReducedRisk} style={{ marginTop: 40 }}>
                     {/* <button

@@ -45,8 +45,10 @@ export default function Guidelines() {
                         buttonRefId={1}
                         frontText={
                             <p>
-                                ESC/EAS GUIDELINES FOR THE MANAGEMENT OF
-                                DYSLIPIDAEMIAS 2019<sup>3</sup>
+                                ESC/EAS GUIDELINES FOR
+                                <br /> THE MANAGEMENT OF
+                                <br /> DYSLIPIDAEMIAS 2019
+                                <sup>3</sup>
                             </p>
                         }
                         backText={
@@ -56,7 +58,7 @@ export default function Guidelines() {
                                     zIndex: '3',
                                 }}
                             >
-                                <li>
+                                <li style={{ marginBottom: 20 }}>
                                     Statin treatment is recommended as a first
                                     drug of choice for reduce CVD risk in
                                     high-risk individuals with
@@ -78,8 +80,10 @@ export default function Guidelines() {
                         buttonRefId={2}
                         frontText={
                             <p>
-                                ESC GUIDELINES CARDIOVASCULAR DISEASE PREVENTION
-                                IN CLINICAL PRACTICE 2021<sup>2</sup>
+                                ESC GUIDELINES
+                                <br /> CARDIOVASCULAR DISEASE
+                                <br /> PREVENTION IN CLINICAL
+                                <br /> PRACTICE 2021<sup>2</sup>
                             </p>
                         }
                         backText={
@@ -89,7 +93,7 @@ export default function Guidelines() {
                                     zIndex: '3',
                                 }}
                             >
-                                <li>
+                                <li style={{ marginBottom: 20 }}>
                                     {
                                         <>
                                             Statin treatment is recommended as
@@ -123,7 +127,7 @@ export default function Guidelines() {
                         router.push('/a-new-paradigm/how-does-vazkepa-work')
                     }
                 />
-                <p className={styles.howNote}>
+                <p className={styles.howNote} style={{ marginLeft: 80 }}>
                     *VAZKEPA is indicated for TG ≥1.7 mmol/L [≥150 mg/dL]
                     <sup>3</sup>
                 </p>

@@ -122,7 +122,8 @@ sup {
     position: absolute;
     right: 0;
     top: 0;
-    width: 1223px;
+    /* width: 1223px; */
+    width: 1180px;
     height: 100%;
     padding: 90px;
     padding-left: 45px;
@@ -149,14 +150,16 @@ sup {
 
 .prev {
     position: fixed;
-    left: 700px;
+    left: 760px;
     top: 50%;
+    transform: translateY(calc(-50% - 64px));
 }
 
 .next {
     position: fixed;
-    right: 50px;
+    right: 40px;
     top: 50%;
+    transform: translateY(calc(-50% - 64px));
 }
 
 .blue {

@@ -49,6 +49,10 @@ export default function PrimarySecondaryEndpoints() {
                         title: 'SAFETY',
                         link: '/reduce-cv-risk/safety',
                     },
+                    {
+                        title: 'CONTRAINDICATIONS',
+                        link: '/reduce-cv-risk/contraindications',
+                    },
                 ]}
             />
             <div className='content'>
@@ -121,7 +125,7 @@ export default function PrimarySecondaryEndpoints() {
                             }
                         }}
                     />
-                    <p>Adapted from Bhatt et al. N Engl J Med, 2019</p>
+                    <p>Adapted from Bhatt et al. N Engl J Med, 2019.</p>
                 </div>
                 <img
                     className='prev'
