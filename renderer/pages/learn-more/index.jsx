@@ -56,7 +56,7 @@ export default function Home() {
                         <div>
                             <img src='/images/learn-more/David/David.png' alt='' onClick={() => {
                                 Router.push('/learn-more/patients/David')
-                            }} />
+                            }} style={{cursor: 'pointer'}} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/David')
                             }}>MEET DAVID*</button>
@@ -65,7 +65,7 @@ export default function Home() {
                         <div>
                             <img src='/images/learn-more/Karin/Karin.png' alt='' onClick={() => {
                                 Router.push('/learn-more/patients/Karin')
-                            }} />
+                            }} style={{cursor: 'pointer'}} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/Karin')
                             }}>MEET KARIN*</button>
@@ -74,7 +74,7 @@ export default function Home() {
                         <div>
                             <img src='/images/learn-more/John/John.png' alt='' onClick={() => {
                                 Router.push('/learn-more/patients/John')
-                            }} />
+                            }} style={{cursor: 'pointer'}} />
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/John')
                             }}>MEET JOHN*</button>
