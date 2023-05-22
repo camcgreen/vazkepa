@@ -109,8 +109,8 @@ export default function VazkepaReduced() {
                         style={{ width: 236, cursor: 'pointer', }}
                     />
                 </div>
-                <p style={{ position: 'relative', top: '10vh', left: '2.5vw', fontSize: '0.8rem', transform: 'translate(30px)'}}>
-                    *REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.8% in VAZKEPA arm vs 29.4% in the placebo arm over a median<br />follow up period of 4.8 years.<sup style={{fontSize: '0.45rem'}}>1</sup>                </p>
+                {/* <p style={{ position: 'relative', top: '10vh', left: '2.5vw', fontSize: '0.8rem', transform: 'translate(30px)'}}>
+                    *REDUCE-IT was not designed to specifically test hypotheses in subgroups.<br />† Time-to-event analysis. RRR and ARR for the primary endpoint were calculated based on the observed event rate: 20.8% in VAZKEPA arm vs 29.4% in the placebo arm over a median<br />follow up period of 4.8 years.<sup style={{fontSize: '0.45rem'}}>1</sup>                </p> */}
 
                 <ArrowButtons left />
 
