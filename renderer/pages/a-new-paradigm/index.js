@@ -66,7 +66,7 @@ export default function Paradigm() {
                     <sup>1, 2</sup>
                 </h1>
                 <img
-                    src='/images/what-is-vazkepa-1a.png'
+                    src='/images/what-is-vazkepa-1b.png'
                     alt=''
                     className={styles.whatIsVazkepa1}
                 />
