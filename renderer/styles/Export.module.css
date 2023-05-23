@@ -1,0 +1,42 @@
+.export {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+}
+
+.export h1 {
+    padding-top: 90px;
+}
+
+.exportContainer {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.exportContainer button {
+    background: var(--colBlue);
+    color: white;
+    outline: 0;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 40px;
+}
+
+.exportContainer button:first-of-type {
+    margin-bottom: 40px;
+}
+
+.exportContainer button:last-of-type {
+    margin-bottom: 40px;
+    background: lightgrey;
+    color: var(--colGrey);
+    padding: 20px;
+    font-size: 1.5rem;
+}

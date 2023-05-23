@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import '../styles/globals.css';
 import IdleTimerComponent from '../components/IdleTimer';
-import Router from 'next/router';
+// import Router from 'next/router';
 
 export default function App({ Component, pageProps }) {
     const router = useRouter();
@@ -78,6 +78,50 @@ export default function App({ Component, pageProps }) {
         storedViews5_3_1 = localStorage.getItem('storedViews5_3_1') || 0;
         storedViews5_3_2 = localStorage.getItem('storedViews5_3_2') || 0;
         storedViews5_3_3 = localStorage.getItem('storedViews5_3_3') || 0;
+
+        let count = 0;
+        let elements = new Map();
+
+        document.addEventListener('click', function (event) {
+            let countdown;
+
+            function reset() {
+                count = 0;
+                countdown = null;
+            }
+
+            count++;
+
+            if (count === 3) {
+                if (!elements.has(event.target)) {
+                    elements.set(event.target, 1);
+                } else {
+                    let currentCount = elements.get(event.target);
+                    currentCount++;
+                    elements.set(event.target, currentCount);
+                }
+
+                let tripleClick = new CustomEvent('trplclick', {
+                    bubbles: true,
+                    detail: {
+                        numberOfTripleClicks: elements.get(event.target),
+                    },
+                });
+
+                event.target.dispatchEvent(tripleClick);
+                reset();
+            }
+
+            if (!countdown) {
+                countdown = window.setTimeout(function () {
+                    reset();
+                }, 500);
+            }
+        });
+
+        document.addEventListener('trplclick', function (event) {
+            router.push('/export');
+        });
     }, []);
 
     useEffect(() => {
