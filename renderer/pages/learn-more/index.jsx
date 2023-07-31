@@ -69,7 +69,7 @@ export default function Home() {
                             <button onClick={() => {
                                 Router.push('/learn-more/patients/Karin')
                             }}>MEET KARIN*</button>
-                            <span>a recent MI patient</span>
+                            <span>an MI patient</span>
                         </div>
                         <div>
                             <img src='/images/learn-more/John/John.png' alt='' onClick={() => {

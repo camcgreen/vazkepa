@@ -14,8 +14,8 @@ const Prescribing = ({ setShowPrescribingPopup }) => {
                 className={styles.close}
                 style={{
                     position: 'fixed',
-                    top: 235,
-                    right: 550,
+                    top: 110,
+                    right: 340,
                     zIndex: 5,
                     cursor: 'pointer',
                 }}

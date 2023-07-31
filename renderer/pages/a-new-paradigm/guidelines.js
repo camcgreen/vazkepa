@@ -75,7 +75,7 @@ export default function Guidelines() {
                                 ESC/EAS GUIDELINES FOR
                                 <br /> THE MANAGEMENT OF
                                 <br /> DYSLIPIDAEMIAS 2019
-                                <sup>3</sup>
+                                <sup>1</sup>
                             </p>
                         }
                         backText={
@@ -107,7 +107,7 @@ export default function Guidelines() {
                         buttonRefId={2}
                         frontText={
                             <p>
-                                ESC GUIDELINES
+                                ESC GUIDELINES FOR
                                 <br /> CARDIOVASCULAR DISEASE
                                 <br /> PREVENTION IN CLINICAL
                                 <br /> PRACTICE 2021<sup>2</sup>

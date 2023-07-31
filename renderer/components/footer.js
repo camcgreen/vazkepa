@@ -64,7 +64,7 @@ const Footer = ({
         <>
             <footer className={styles.footer}>
                 <div className={styles.left}>
-                    <p>VAZKEPA ist in Deutschland nicht erhältlich</p>
+                    {/* <p>VAZKEPA ist in Deutschland nicht erhältlich</p> */}
                 </div>
                 <div className={styles.right}>
                     {isMedicalInfoPage() == true ? (

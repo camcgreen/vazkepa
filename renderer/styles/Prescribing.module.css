@@ -10,8 +10,10 @@
 
 .img {
     z-index: 4;
-    width: 920px;
-    height: 700px;
+    /* width: 920px;
+    height: 700px; */
+    width: 1340px;
+    height: 959px;
 }
 
 .close {

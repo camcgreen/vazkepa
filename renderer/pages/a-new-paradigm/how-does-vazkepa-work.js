@@ -68,7 +68,7 @@ export default function How() {
                     <br />
                     for CV risk reduction<sup>2,4</sup> */}
                     VAZKEPA is the only pure EPA-based omega-3 fatty acid
-                    approved by EU for CV risk reduction<sup>2,4</sup>
+                    approved by EU for CV risk reduction<sup>2,4,5</sup>
                 </h2>
                 <img
                     src='/images/how-does-vazkepa-work-1.png'
@@ -107,11 +107,11 @@ export default function How() {
                         }}
                     />
                 </div>
-                <p className={styles.howNote} style={{ marginLeft: 80 }}>
+                {/* <p className={styles.howNote} style={{ marginLeft: 80 }}>
                     *VAZKEPA (icosapent ethyl) is a new active substance
                     compared to mixtures of omega-3 fatty acids previously
                     authorised in European Union<sup>2</sup>
-                </p>
+                </p> */}
                 <Footer
                     imgSrc='reference-3.1.png'
                     popupImgSrc={[

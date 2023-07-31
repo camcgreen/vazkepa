@@ -37,9 +37,10 @@
 }
 
 .callout {
-    width: 648px;
+    /* width: 648px; */
+    width: 642px;
     /* align-self: center; */
-    margin-left: 100px;
+    margin-left: 77px;
 }
 
 .buttonGap {
@@ -100,9 +101,11 @@
 }
 
 .howDoesVazkepa1 {
-    width: 852px;
-    align-self: center;
+    /* width: 852px; */
+    /* align-self: center; */
     /* margin-top: 40px; */
+    width: 818px;
+    margin-left: 100px;
 }
 
 .buttonHow {
@@ -116,7 +119,8 @@
 .howButtons {
     position: fixed;
     right: 40px;
-    bottom: 140px;
+    /* bottom: 140px; */
+    bottom: 100px;
     display: flex;
 }
 
