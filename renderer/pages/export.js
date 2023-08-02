@@ -28,14 +28,39 @@ const Export = () => {
     const [views5_3_1, setViews5_3_1] = useState(0);
     const [views5_3_2, setViews5_3_2] = useState(0);
     const [views5_3_3, setViews5_3_3] = useState(0);
+    const [authorised, setAuthorised] = useState(false);
 
-    const sendToExport = () => {
-        const table = makeTable();
-        exportExcel(table, 'views');
+    const pwd = 'password';
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        if (e.target[0].value === pwd) {
+            setAuthorised(true);
+        } else {
+            e.target[0].value = '';
+        }
+    };
+
+    const sendToExport = (perInteraction) => {
+        let table;
+        if (!perInteraction) {
+            table = makeTable();
+            exportExcel(table, 'views');
+        } else {
+            table = JSON.parse(localStorage.getItem('sessions'));
+            if (table !== null) {
+                exportExcel(table, 'interactions');
+            } else {
+                alert('No interactions have been logged yet.');
+            }
+        }
     };
 
     const makeTable = () => {
         let table = [];
+        let numberOfInteractions = localStorage.getItem('numberOfInteractions');
+        if (numberOfInteractions === null) numberOfInteractions = 0;
         table.push(
             {
                 page: '1_0',
@@ -118,8 +143,8 @@ const Export = () => {
                 views: views5_2_3,
             },
             {
-                page: '5_1_1',
-                views: views5_1_1,
+                page: '5_3_1',
+                views: views5_3_1,
             },
             {
                 page: '5_3_2',
@@ -128,6 +153,37 @@ const Export = () => {
             {
                 page: '5_3_3',
                 views: views5_3_3,
+            },
+            {
+                page: 'Total Views',
+                views:
+                    +views1_0 +
+                    +views2_0 +
+                    +views2_1 +
+                    +views2_2 +
+                    +views3_0 +
+                    +views3_1 +
+                    +views3_2 +
+                    +views4_0 +
+                    +views4_1 +
+                    +views4_2 +
+                    +views4_3 +
+                    +views4_4 +
+                    +views4_5 +
+                    +views5_0 +
+                    +views5_1_1 +
+                    +views5_1_2 +
+                    +views5_1_3 +
+                    +views5_2_1 +
+                    +views5_2_2 +
+                    +views5_2_3 +
+                    +views5_3_1 +
+                    +views5_3_2 +
+                    +views5_3_3,
+            },
+            {
+                page: 'Individual Interactions',
+                views: numberOfInteractions,
             }
         );
 
@@ -193,10 +249,25 @@ const Export = () => {
         <div className={styles.export}>
             <h1>Export</h1>
             <div className={styles.exportContainer}>
-                <button onClick={() => sendToExport()}>
+                <button onClick={() => sendToExport(false)}>
                     Export page view counts
                 </button>
+                <button onClick={() => sendToExport(true)}>
+                    Export page list per interaction
+                </button>
                 <button onClick={() => router.push('/')}>Back to home</button>
+            </div>
+            <div
+                className={styles.passwordOverlay}
+                style={{
+                    opacity: authorised ? 0 : 1,
+                    pointerEvents: authorised ? 'none' : 'all',
+                }}
+            >
+                <h1>Enter password</h1>
+                <form onSubmit={handleSubmit}>
+                    <input type='password' />
+                </form>
             </div>
         </div>
     );

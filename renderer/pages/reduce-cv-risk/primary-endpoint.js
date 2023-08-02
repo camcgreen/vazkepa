@@ -54,8 +54,8 @@ export default function PrimaryEndpoint() {
             <div className='content'>
                 <h1>
                     <span className='blue'>VAZKEPA SIGNIFICANTLY REDUCED</span>{' '}
-                    THE RISK OF MAJOR CV EVENTS IN HIGH AND VERY HIGH CV RISK
-                    PATIENTS<sup>1,2</sup>
+                    THE RISK OF MAJOR <br /> CV EVENTS IN HIGH AND VERY HIGH CV
+                    RISK PATIENTS<sup>1,2</sup>
                 </h1>
                 {/* <h2>
                     The risk of the primary composite endpoint was significantly

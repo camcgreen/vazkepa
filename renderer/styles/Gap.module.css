@@ -43,6 +43,13 @@
     margin-left: 77px;
 }
 
+.added {
+    width: 309px;
+    margin-left: 80px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+}
+
 .buttonGap {
     cursor: pointer;
     position: fixed;

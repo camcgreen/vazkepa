@@ -125,6 +125,28 @@ export default function App({ Component, pageProps }) {
     }, []);
 
     useEffect(() => {
+        let currentSessionStarted = localStorage.getItem(
+            'currentSessionStarted'
+        );
+
+        let sessions = localStorage.getItem('sessions');
+
+        if (currentSessionStarted === null) currentSessionStarted = Date.now();
+
+        if (sessions !== null) {
+            sessions = JSON.parse(sessions);
+        } else {
+            sessions = [];
+        }
+
+        sessions.push({
+            sessionStart: currentSessionStarted,
+            pageViewed: router.pathname,
+        });
+        console.log(sessions);
+        localStorage.setItem('sessions', JSON.stringify(sessions));
+
+        console.log(currentSessionStarted);
         switch (router.pathname) {
             case '/':
                 const lcl1_0 = localStorage.getItem('storedViews1_0');
@@ -228,7 +250,7 @@ export default function App({ Component, pageProps }) {
                 <title>BOILERPLATE</title>
                 <link rel='icon' href='/favicon.ico' />
             </Head>
-            {/* <IdleTimerComponent /> */}
+            <IdleTimerComponent />
             {/* <img
                 src='/images/v.png'
                 alt=''

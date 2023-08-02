@@ -63,7 +63,7 @@ export default function Paradigm() {
                     </span>{' '}
                     OF ITS CLASS
                     <br /> APPROVED IN EUROPEAN UNION FOR CV RISK REDUCTION
-                    <sup>1, 2</sup>
+                    <sup>1-3</sup>
                 </h1>
                 <img
                     src='/images/what-is-vazkepa-1b.png'

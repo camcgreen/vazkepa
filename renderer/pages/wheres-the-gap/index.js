@@ -57,6 +57,11 @@ export default function Home() {
                     />
                 </div>
                 <img
+                    src='/images/wheres-the-gap-added.png'
+                    alt=''
+                    className={styles.added}
+                />
+                <img
                     src='/images/wheres-the-gap-3.png'
                     alt=''
                     className={styles.callout}

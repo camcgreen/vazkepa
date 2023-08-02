@@ -52,11 +52,11 @@ export default function Study() {
                 ]}
             />
             <div className='content'>
-                <h1>
+                <h1 style={{ textTransform: 'initial' }}>
                     <span className='blue'>VAZKEPA’S CV BENEFITS</span> WERE
                     STUDIED IN REDUCE-IT IN <br />
-                    HIGH AND VERY HIGH RISK PATIENTS WITH ELEVATED TGs <br />
-                    ≥1.7 MMOL/L (≥150 MG/DL)<sup>1,2</sup>
+                    HIGH AND VERY HIGH RISK PATIENTS WITH ELEVATED TGS <br />
+                    ≥1.7 mmol/L (≥150 mg/dL)<sup>1,2</sup>
                 </h1>
                 <h2>
                     REDUCE-IT study design key inclusion criteria:<sup>1</sup>

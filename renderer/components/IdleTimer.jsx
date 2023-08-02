@@ -4,8 +4,8 @@ import styles from '../styles/ScreenSaver.module.css'
 import Router from "next/router"
 
 // const timeout = 6000;
-// const timeout = 30000;
-const timeout = 120000;
+const timeout = 30000;
+// const timeout = 120000;
 const timeoutPushDelay = 5000;
 const pushToPage = '/'
 
@@ -24,6 +24,18 @@ const IdleTimerComponent = () => {
     const handleOnActive = () => {
         console.log("active")
         setIsIdle(false)
+        const currentSessionStartedTimestamp = Date.now();
+        let currentSessionStartedTime = new Date(currentSessionStartedTimestamp);
+        currentSessionStartedTime = new Date(currentSessionStartedTime.toLocaleString('en-US', { timeZone: 'Europe/London' }));
+        let currentSessionStarted = currentSessionStartedTime.toISOString().replace(/T/, ' ').replace(/\..+/, ''); // replace T with a space and remove millisecond part
+        localStorage.setItem('currentSessionStarted', currentSessionStarted);
+        let numberOfInteractions = localStorage.getItem('numberOfInteractions');
+        if (numberOfInteractions !== null) {
+            numberOfInteractions = parseInt(numberOfInteractions) + 1;
+        } else {
+            numberOfInteractions = 1;
+        }
+        localStorage.setItem('numberOfInteractions', numberOfInteractions.toString())
         clearTimeout(returnTimeout);
 
         //setIsIdleGlobal[1](false)
