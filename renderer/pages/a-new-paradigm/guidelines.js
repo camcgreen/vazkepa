@@ -90,7 +90,8 @@ export default function Guidelines() {
                                     drug of choice for reduce CVD risk in
                                     high-risk individuals with
                                     hypertriglyceridaemia (TG&gt;2.3mmol/L
-                                    [&gt;200mg/dL]). Class I, Level B
+                                    [&gt;200mg/dL]). <br />
+                                    Class I, Level B
                                 </li>
                                 <li>
                                     In <span>high-risk (or above)</span>{' '}

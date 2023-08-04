@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import '../styles/globals.css';
 import IdleTimerComponent from '../components/IdleTimer';
+import { convertPathToNumber } from '../../utils/helpers';
 // import Router from 'next/router';
 
 export default function App({ Component, pageProps }) {
@@ -131,7 +132,27 @@ export default function App({ Component, pageProps }) {
 
         let sessions = localStorage.getItem('sessions');
 
-        if (currentSessionStarted === null) currentSessionStarted = Date.now();
+        if (currentSessionStarted === null) {
+            const currentSessionStartedTimestamp = Date.now();
+            let currentSessionStartedTime = new Date(
+                currentSessionStartedTimestamp
+            );
+            currentSessionStartedTime = new Date(
+                currentSessionStartedTime.toLocaleString('en-US', {
+                    timeZone: 'Europe/London',
+                })
+            );
+            currentSessionStarted = currentSessionStartedTime
+                .toISOString()
+                .replace(/T/, ' ')
+                .replace(/\..+/, ''); // replace T with a space and remove millisecond part
+            localStorage.setItem(
+                'currentSessionStarted',
+                currentSessionStarted
+            );
+        }
+
+        // If the current session started more than 20 minutes ago, set it to now?
 
         if (sessions !== null) {
             sessions = JSON.parse(sessions);
@@ -140,8 +161,8 @@ export default function App({ Component, pageProps }) {
         }
 
         sessions.push({
-            sessionStart: currentSessionStarted,
-            pageViewed: router.pathname,
+            sessionStart: currentSessionStarted.toString() + ' GMT',
+            pageViewed: convertPathToNumber(router.pathname),
         });
         console.log(sessions);
         localStorage.setItem('sessions', JSON.stringify(sessions));

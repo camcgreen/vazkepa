@@ -186,7 +186,7 @@
 .studyDesign1 {
     width: 804px;
     align-self: center;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
 .buttonBaseline {
@@ -196,7 +196,8 @@
     bottom: 100px; */
     width: 300px;
     align-self: flex-end;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin-bottom: 120px;
 }
 
 .primaryEndpoint1 {

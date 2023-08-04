@@ -71,7 +71,7 @@ export default function KarinMedicalInfo() {
                         <img src="/images/karin-medical-info-1.png" alt="" style={{ width: 378, marginRight: 40, transform: 'translateX(20px)' }} />
                         <div className={styles.text}>
                             <span style={{ paddingTop: '40px', fontWeight: 'inherit', width: '30vw' }}>
-                                Since her MI just over a year ago, Karin<br />has been on standard medical therapy,<br />including statins.
+                                Since her MI just over three years ago,<br />Karin has been on standard medical<br />therapy, including statins.
                             </span>
                             {/*                             <span style={{ paddingTop: '0px', fontWeight: 'inherit' }}>
                                 For patients like Karin with prior MI, even with current guideline-recommended therapies, risk for CV events remains in patients.<sup style={{ fontSize: '15px' }}>1</sup>
