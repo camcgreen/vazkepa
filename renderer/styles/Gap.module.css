@@ -172,7 +172,8 @@
 
 .cardsGuidelines li {
     /* list-style-position: inside; */
-    max-width: 75%;
+    /* max-width: 75%; */
+    max-width: 80%;
     transform: translateX(50px);
     text-align: left;
     color: var(--colGrey);

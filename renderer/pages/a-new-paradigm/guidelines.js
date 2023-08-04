@@ -86,20 +86,25 @@ export default function Guidelines() {
                                 }}
                             >
                                 <li style={{ marginBottom: 20 }}>
-                                    Statin treatment is recommended as a first
-                                    drug of choice for reduce CVD risk in
-                                    high-risk individuals with
-                                    hypertriglyceridaemia (TG&gt;2.3mmol/L
+                                    Statin treatment is recommended
+                                    <br />
+                                    as a first drug of choice for reduce CVD
+                                    risk in high-risk individuals
+                                    <br />
+                                    with hypertriglyceridaemia (TG&gt;2.3mmol/L
                                     [&gt;200mg/dL]). <br />
                                     Class I, Level B
                                 </li>
                                 <li>
                                     In <span>high-risk (or above)</span>{' '}
                                     patients with TG between 1.5 and 5.6 mmol/L
+                                    <br />
                                     (135-499mg/dL)* despite statin treatment,
                                     n-3 PUFAs (<span>icosapent ethyl</span> 2 x
                                     2 g/day) should be considered in combination
-                                    with statin. Class IIa, Level B
+                                    with
+                                    <br />
+                                    statin. Class IIa, Level B
                                 </li>
                             </ul>
                         }
