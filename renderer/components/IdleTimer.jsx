@@ -24,11 +24,48 @@ const IdleTimerComponent = () => {
     const handleOnActive = () => {
         console.log("active")
         setIsIdle(false)
+
         const currentSessionStartedTimestamp = Date.now();
-        let currentSessionStartedTime = new Date(currentSessionStartedTimestamp);
-        currentSessionStartedTime = new Date(currentSessionStartedTime.toLocaleString('en-US', { timeZone: 'Europe/London' }));
-        let currentSessionStarted = currentSessionStartedTime.toISOString().replace(/T/, ' ').replace(/\..+/, ''); // replace T with a space and remove millisecond part
-        localStorage.setItem('currentSessionStarted', currentSessionStarted);
+        let currentSessionStartedTime = new Date(
+            currentSessionStartedTimestamp
+        );
+
+        currentSessionStartedTime = new Date(
+            currentSessionStartedTime.toLocaleString('en-US', {
+                timeZone: 'Europe/Amsterdam',
+            })
+        );
+
+        // Add an hour to currentSessionStartedTime
+        currentSessionStartedTime.setHours(
+            currentSessionStartedTime.getHours() + 1
+        );
+
+        let currentSessionStarted = currentSessionStartedTime
+            .toISOString()
+            .replace(/T/, ' ') // replace T with a space
+            .replace(/\..+/, ''); // remove millisecond part
+
+        localStorage.setItem(
+            'currentSessionStarted',
+            currentSessionStarted
+        );
+
+        // const currentSessionStartedTimestamp = Date.now();
+        // let currentSessionStartedTime = new Date(currentSessionStartedTimestamp);
+        // currentSessionStartedTime = new Date(currentSessionStartedTime.toLocaleString('en-US', { timeZone: 'Europe/London' }));
+        // let currentSessionStarted = currentSessionStartedTime.toISOString().replace(/T/, ' ').replace(/\..+/, ''); // replace T with a space and remove millisecond part
+        // let currentSessionStartedTime = new Date(
+        //     currentSessionStartedTimestamp.toLocaleString('en-US', {
+        //         timeZone: 'Europe/Amsterdam',
+        //     })
+        // );
+        // // Add an hour to currentSessionStartedTime
+        // currentSessionStartedTime.setHours(
+        //     currentSessionStartedTime.getHours() + 1
+        // );
+        // let currentSessionStarted = currentSessionStartedTime.toISOString().replace(/T/, ' ').replace(/\..+/, ''); // replace T with a space and remove millisecond part
+        // localStorage.setItem('currentSessionStarted', currentSessionStarted);
         let numberOfInteractions = localStorage.getItem('numberOfInteractions');
         if (numberOfInteractions !== null) {
             numberOfInteractions = parseInt(numberOfInteractions) + 1;

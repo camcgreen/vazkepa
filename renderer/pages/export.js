@@ -30,7 +30,7 @@ const Export = () => {
     const [views5_3_3, setViews5_3_3] = useState(0);
     const [authorised, setAuthorised] = useState(false);
 
-    const pwd = 'password';
+    const pwd = 'vazkepa_esc_2023';
 
     const handleSubmit = (e) => {
         e.preventDefault();
