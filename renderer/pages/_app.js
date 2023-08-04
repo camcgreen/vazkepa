@@ -133,19 +133,28 @@ export default function App({ Component, pageProps }) {
         let sessions = localStorage.getItem('sessions');
 
         if (currentSessionStarted === null) {
+            console.log('null');
             const currentSessionStartedTimestamp = Date.now();
             let currentSessionStartedTime = new Date(
                 currentSessionStartedTimestamp
             );
+
             currentSessionStartedTime = new Date(
                 currentSessionStartedTime.toLocaleString('en-US', {
-                    timeZone: 'Europe/London',
+                    timeZone: 'Europe/Amsterdam',
                 })
             );
+
+            // Add an hour to currentSessionStartedTime
+            currentSessionStartedTime.setHours(
+                currentSessionStartedTime.getHours() + 1
+            );
+
             currentSessionStarted = currentSessionStartedTime
                 .toISOString()
-                .replace(/T/, ' ')
-                .replace(/\..+/, ''); // replace T with a space and remove millisecond part
+                .replace(/T/, ' ') // replace T with a space
+                .replace(/\..+/, ''); // remove millisecond part
+
             localStorage.setItem(
                 'currentSessionStarted',
                 currentSessionStarted
@@ -161,7 +170,7 @@ export default function App({ Component, pageProps }) {
         }
 
         sessions.push({
-            sessionStart: currentSessionStarted.toString() + ' GMT',
+            sessionStart: currentSessionStarted.toString() + ' CEST',
             pageViewed: convertPathToNumber(router.pathname),
         });
         console.log(sessions);
