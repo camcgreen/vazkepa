@@ -42,7 +42,7 @@ export default function VazkepaReduced() {
                     <span className='blue'>VAZKEPA</span> REDUCED THE RISK OF MAJOR CV EVENTS<br />IN PATIENTS WITH <span style={{ fontWeight: '500' }}>PRIOR MI<sup style={{ fontSize: '15px', position: 'relative', top: '-2px' }}>1,2</sup></span>
 
                 </h1>
-                <h2 style={{ fontWeight: 500, position: 'relative', top: '4vh' }}>Prespecified and post hoc analysis of REDUCE-IT in patients with prior MI<sup style={{ fontSize: '10px', position: 'relative', top: '-1px' }}>1,2*</sup></h2>
+                <h2 style={{ fontWeight: 500, position: 'relative', top: '4vh' }}>Prespecified and post hoc analysis of REDUCE-IT in patients with prior MI<sup style={{ fontSize: '10px', position: 'relative', top: '-1px' }}>1,2</sup></h2>
 
 
 
