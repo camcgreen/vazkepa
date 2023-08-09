@@ -289,7 +289,7 @@
 .secondaryFootnote {
     position: absolute;
     bottom: 80px;
-    width: 450px;
+    /* width: 450px; */
     transform: translateX(75px);
 }
 

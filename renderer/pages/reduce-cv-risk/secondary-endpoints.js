@@ -167,9 +167,26 @@ export default function secondaryEndpoints() {
                     onClick={() => router.push('/reduce-cv-risk/safety')}
                 />
                 <img
-                    src='/images/secondary-endpoints-5.png'
+                    // src='/images/secondary-endpoints-5.png'
+                    src={
+                        orangeSrc !== '/images/secondary-endpoints-2b.png' &&
+                        blue1Src !== '/images/secondary-endpoints-3b.png' &&
+                        blue2Src !== '/images/secondary-endpoints-4b.png'
+                            ? '/images/secondary-endpoints-7a.png'
+                            : '/images/secondary-endpoints-7b.png'
+                    }
                     alt=''
                     className={styles.secondaryFootnote}
+                    style={{
+                        width:
+                            orangeSrc !==
+                                '/images/secondary-endpoints-2b.png' &&
+                            blue1Src !== '/images/secondary-endpoints-3b.png' &&
+                            blue2Src !== '/images/secondary-endpoints-4b.png'
+                                ? 890
+                                : 450,
+                        opacity: 0.75,
+                    }}
                 />
                 <Footer
                     imgSrc='reference-4.3.png'

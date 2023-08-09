@@ -152,8 +152,21 @@ export default function PrimarySecondaryEndpoints() {
                 />
                 <img
                     src='/images/primary-secondary-3.png'
+                    // src={
+                    //     orangeSrc !== '/images/primary-secondary-1b.png' &&
+                    //     blueSrc !== '/images/primary-secondary-2b.png'
+                    //         ? '/images/primary-secondary-3a.png'
+                    //         : '/images/primary-secondary-3b.png'
+                    // }
                     alt=''
                     className={styles.primarySecondaryFootnote}
+                    // style={{
+                    //     width:
+                    //         orangeSrc !== '/images/primary-secondary-1b.png' &&
+                    //         blueSrc !== '/images/primary-secondary-2b.png'
+                    //             ? 890
+                    //             : 450,
+                    // }}
                 />
                 <Footer
                     imgSrc='reference-4.2.png'
